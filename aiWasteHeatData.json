@@ -266,6 +266,76 @@
     }
   },
 
+  "dictFacilityConversion": {
+    "dElectricalToHeatFraction": {
+      "dValue": 1.0,
+      "sNote": "NOT a free parameter. Essentially all electrical energy delivered to a data centre is dissipated as heat on site; there is no useful energy export. The only energy that leaves as something other than heat is the information itself, which at the Landauer bound (kT ln2 = 2.87e-21 J/bit at 300 K) amounts to about 5.6e-11 W for Google's entire annual token output — a fraction 5e-21 of AI server power. Verified 2026-07-27. Applying a conversion efficiency of, say, 99 percent 'useful' would understate waste heat by a factor of 100."
+    },
+    "dPowerUsageEffectiveness": {
+      "dGlobalAverage": 1.54,
+      "daHyperscaleRange": [1.09, 1.15],
+      "daColocationEnterpriseRange": [1.58, 1.80],
+      "sNote": "PUE is total facility power divided by IT-equipment power. It does NOT change the fraction of input energy that becomes heat (which stays 1.0); it is the multiplier converting a chip-level joules-per-token measurement into facility-level power. This is a large part of the device-level versus system-level gap recorded above. The global average has been stagnant at 1.54 for six consecutive years, so treating PUE as rapidly improving is not supported.",
+      "sSource": "Uptime Institute Global Data Center Survey 2025; Google fleet-wide PUE 1.09 in early 2025.",
+      "sUrl": "https://datacenter.uptimeinstitute.com/rs/711-RIA-145/images/2025.Annual.Survey.Report.pdf?version=0",
+      "sAccessedIso": "2026-07-27",
+      "sSourceConfidence": "secondary"
+    },
+    "dSiteAveragePowerDensityWattsPerSquareMetre": {
+      "dValue": 12.5,
+      "sDerivation": "A 100 MW facility over an 8e6 m^2 site. Recomputed 2026-07-27.",
+      "sWhyThisMatters": "This is 21 percent of the 60.8 W/m^2 excess flux the whole planet needs for the moist-greenhouse threshold. Equivalently, reaching the global threshold at data-centre power density would require tiling 4.86 Earth surfaces. This is a far more visceral statement of the result than 3.1e16 W and it is directly checkable.",
+      "sSourceConfidence": "secondary"
+    }
+  },
+
+  "dictLocalHeatIsland": {
+    "sQuantity": "Observed land surface temperature rise near AI data centres, and how much of it is attributable to waste heat.",
+    "dObservedLandSurfaceTemperatureRiseCelsius": {
+      "dValue": 2.0,
+      "dExtremeCaseFahrenheit": 16.4,
+      "sNote": "Average rise in land surface temperature after an AI data centre begins operating, from ~20 years of remote-sensing data over more than 6000 data centres sited away from dense urban areas. Effects reported out to 6.2 miles, affecting more than 340 million people.",
+      "sSource": "'The data heat island effect: quantifying the impact of AI data centers in a warming world' (2026).",
+      "sSourceConfidence": "secondary"
+    },
+    "dictAttributionChallenge": {
+      "daWasteHeatFluxReachingGroundWattsPerSquareMetre": [0.25, 0.625],
+      "daImpliedWarmingFromWasteHeatCelsius": [0.02, 0.05],
+      "dFractionOfObservedSignal": 0.02,
+      "sNote": "A published critique argues the observed warming is dominated by land-use and albedo change — replacing grass with buildings and tarmac, whose surfaces run 20-35 C hotter on a sunny day — rather than by operational waste heat, which accounts for only 1-3 percent of the signal. Satellite pixels are roughly 1 km^2 and a data centre occupies only 10-20 percent of one.",
+      "sSource": "https://blog.andymasley.com/p/data-centers-heat-exhaust-is-not",
+      "sAccessedIso": "2026-07-27",
+      "sSourceConfidence": "primary",
+      "sVerdict": "The temperature observations appear real; the attribution to waste heat does not survive scrutiny. Do NOT use local heat-island measurements as evidence for the global waste-heat argument. They are a good worked example of a correct observation with a wrong mechanism attached."
+    }
+  },
+
+  "dictPriorArt": {
+    "sFinding": "This calculation is NOT novel. The waste-heat thermal limit to exponential energy growth has been computed at least twice, once in a peer-reviewed venue. The AI-specific framing is what is new. For a reproducibility demonstration this is an advantage: there is a published result to check against.",
+    "listPriorWork": [
+      {
+        "sCitation": "Eric J. Chaisson, 'Long-Term Global Heating from Energy Usage', Eos, Transactions American Geophysical Union, 89(28), 253-254, 2008.",
+        "sUrl": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2008EO280001",
+        "sRelevance": "The peer-reviewed precursor. Argues that even with zero greenhouse emissions, dissipated waste heat imposes a growth limit dictated solely by the second law — a forcing routinely omitted from warming scenarios.",
+        "sSourceConfidence": "secondary",
+        "sFollowUp": "Drew published replies: de Laat, 'Current Climate Impact of Heating From Energy Usage', Eos 2008; Flanner comment, Eos 89:531, 2008; and Flanner, 'Integrating anthropogenic heat flux with global climate models', Geophys. Res. Lett., 2009. There is a real critical literature here, not just an assertion."
+      },
+      {
+        "sCitation": "Tom Murphy, 'Galactic-Scale Energy', Do the Math (UCSD), 12 July 2011.",
+        "sUrl": "https://dothemath.ucsd.edu/2011/07/galactic-scale-energy/",
+        "sRelevance": "CLOSEST MATCH to the present calculation. Takes 12 TW global energy use growing at 2.3 percent per year, applies Stefan-Boltzmann, and finds Earth reaches boiling in about 400 years and the entire Milky Way's output in about 2500 years. Explicitly technology-independent: any energy source obeying thermodynamics gives the same answer. Murphy also published a peer-reviewed version on limits to economic growth.",
+        "sSourceConfidence": "primary"
+      },
+      {
+        "sCitation": "Robert T. Nachtrieb and Steven J. Smith, 'AI Hastens Limits to Exponential Growth', arXiv:2604.23026, 24 April 2026.",
+        "sUrl": "https://arxiv.org/abs/2604.23026",
+        "sRelevance": "ADJACENT, NOT IDENTICAL. The AI-specific version of the limits-to-growth argument: AI may raise electricity demand growth from 3 to 15 percent per year, collapsing multi-millennial timelines into decades, with expansion ultimately limited by Kardashev-style geometry and the speed of light. The abstract frames the limit as RESOURCE DEPLETION (deuterium, solar capture), not as a waste-heat radiative threshold. The 3-to-15-percent growth bracket is directly useful as an independent, published growth-rate range.",
+        "sSourceConfidence": "primary",
+        "sPendingAction": "Read the full text to confirm whether a waste-heat threshold appears in the body; the abstract does not mention one."
+      }
+    ]
+  },
+
   "listCaveats": [
     "A token is not a fixed unit of work. Reasoning models emit many more tokens per user request than their predecessors (one report puts Gemini Flash 2.5 at about 17x its predecessor), so a rising token count partly measures a change in how answers are produced rather than a rise in demand. The May-to-June 2025 doubling is widely read this way.",
     "Google's token totals mix text, image, audio, and video processing without separating them, and these differ greatly in energy per token.",
@@ -273,7 +343,9 @@
     "Growth is decelerating on every measured interval. Fitting a single exponential to the full 2024-2026 series will produce an onset date that the recent data do not support.",
     "Efficiency is improving at a rate comparable to the deceleration in growth. A model that holds joules per token fixed is not conservative, it is wrong in a known direction.",
     "Waste heat is a genuinely negligible forcing at present scales; the greenhouse effect of the CO2 emitted in generating that electricity dominates by orders of magnitude. The calculation is a scale argument about a physical ceiling, not a claim that AI warms the planet this way. This must be stated in the figure caption, not buried.",
-    "All electrical energy delivered to a data centre becomes heat, so no conversion efficiency factor applies between power draw and waste heat. This is the one step in the chain with no uncertainty."
+    "All electrical energy delivered to a data centre becomes heat, so no conversion efficiency factor applies between power draw and waste heat. This is the one step in the chain with no uncertainty.",
+    "Local data-centre warming is observed but is probably not waste heat; the published attribution to land-use and albedo change is quantitatively stronger. Citing the local 1-2 C signal as support for the global argument would be a mechanism error.",
+    "The calculation has been done before (Chaisson 2008, Murphy 2011). Present this as a reproduction with an AI-specific input series, not as a new result."
   ],
 
   "listPendingActions": [
