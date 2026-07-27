@@ -1,0 +1,284 @@
+{
+  "sSchemaVersion": "1.0.0",
+  "sTitle": "AI waste heat and the moist-greenhouse threshold: observational inputs",
+  "sDescription": "Raw, sourced inputs for estimating the time until waste heat from AI computation drives Earth's outgoing longwave radiation past the moist-greenhouse (Simpson-Nakajima) limit. Every observational record carries its own source, access date, and uncertainty. Derived quantities are recomputed by the analysis, not trusted from this file.",
+  "sCompiledIso": "2026-07-27",
+  "sCompiledBy": "Literature sweep; all numeric anchors independently recomputed before recording.",
+  "dictSourceConfidenceKey": {
+    "primary": "The cited document itself was retrieved and the number read from it.",
+    "secondary": "The number appears in a search-result summary or aggregator only; the primary document was NOT retrieved. Treat as provisional and re-source before publication."
+  },
+
+  "dictPhysicalConstants": {
+    "dSolarConstantWattsPerSquareMetre": {
+      "dValue": 1361.0,
+      "dUncertainty": 0.5,
+      "sNote": "Total solar irradiance at 1 au, mean over the solar cycle; cycle amplitude is about 1 W/m^2 peak-to-peak.",
+      "sSource": "IAU / CODATA-consensus value; standard in radiative-balance literature.",
+      "sSourceConfidence": "primary"
+    },
+    "dEarthRadiusMetres": {
+      "dValue": 6371000.0,
+      "sNote": "Volumetric mean radius."
+    },
+    "dEarthBondAlbedo": {
+      "dValue": 0.294,
+      "daPlausibleRange": [0.29, 0.30],
+      "sNote": "Sets present-day absorbed flux and therefore the size of the excess-heat gap. Varying it across the stated range moves the required waste heat by less than 4 percent."
+    },
+    "dEarthSurfaceAreaSquareMetres": {
+      "dValue": 5.1006e14,
+      "sNote": "4*pi*R^2, recorded for convenience; recompute rather than trust."
+    },
+    "dAbsorbedSolarPowerWatts": {
+      "dValue": 1.2253e17,
+      "sNote": "S * pi * R^2 * (1 - albedo) at albedo 0.294. Equivalent to 240.2 W/m^2 averaged over the whole surface, the standard present-day outgoing longwave flux."
+    }
+  },
+
+  "dictMoistGreenhouseThreshold": {
+    "dOutgoingFluxLimitWattsPerSquareMetre": {
+      "dValue": 300.0,
+      "daPlausibleRange": [280.0, 310.0],
+      "sNote": "The asymptotic outgoing-radiation limit of a warm, water-vapour-saturated atmosphere: once absorbed plus internally generated flux exceeds it, no steady state exists and the ocean runs away. The range spans the published spread in radiative-transfer treatments; the choice of value is the single largest source of uncertainty in the threshold itself, though a small one compared with the growth-rate uncertainty.",
+      "sSource": "User-specified primary criterion; consistent with the Simpson-Nakajima limit as computed in the runaway-greenhouse literature.",
+      "sSourceConfidence": "secondary",
+      "sPendingAction": "Attach a specific citation (Goldblatt et al. or Kopparapu et al.) before this figure is published."
+    },
+    "dRequiredWasteHeatWatts": {
+      "dValue": 3.1012e16,
+      "dValueAtLowerLimit": 2.0811e16,
+      "dValueAtUpperLimit": 3.6113e16,
+      "sNote": "(limit - 240.2 W/m^2) * Earth surface area. At the 300 W/m^2 criterion the planet must generate an excess 60.8 W/m^2 everywhere, i.e. 3.10e16 W. Recomputed and confirmed 2026-07-27.",
+      "sDerivation": "Derived here for reference only; the analysis must recompute it from the constants above."
+    },
+    "sSecondaryCriterion": "A Stefan-Boltzmann inversion for a 70 C surface, retained as a cross-check but NOT the primary criterion."
+  },
+
+  "dictTokenThroughput": {
+    "sQuantity": "Tokens processed per month across Google surfaces (consumer apps plus APIs).",
+    "sWhyGoogle": "Google is the only operator at frontier scale that has published a repeated, dated token-throughput series. It is a lower bound on global throughput, not a measure of it.",
+    "sUnits": "tokens per month",
+    "listObservations": [
+      {
+        "sIso": "2024-05",
+        "dTokensPerMonth": 9.7e12,
+        "sSource": "Sundar Pichai, Google I/O keynote, 19 May 2026 (retrospective series); originally reported at I/O 2025.",
+        "sUrl": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
+        "sAccessedIso": "2026-07-27",
+        "sSourceConfidence": "primary"
+      },
+      {
+        "sIso": "2025-05",
+        "dTokensPerMonth": 4.80e14,
+        "sSource": "Sundar Pichai, Google I/O keynote, 19 May 2026 (retrospective series).",
+        "sUrl": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
+        "sAccessedIso": "2026-07-27",
+        "sSourceConfidence": "primary"
+      },
+      {
+        "sIso": "2025-06",
+        "dTokensPerMonth": 9.80e14,
+        "sSource": "Demis Hassabis, public post late July 2025, reporting 'last month'.",
+        "sUrl": "https://the-decoder.com/google-processed-nearly-one-quadrillion-tokens-in-june-doubling-mays-total/",
+        "sAccessedIso": "2026-07-27",
+        "sSourceConfidence": "primary",
+        "sCaveat": "MONTH AMBIGUOUS. The post says 'last month' and was made in late July 2025; most coverage reads this as June 2025, but at least one secondary analysis labels it July 2025. The one-month doubling from May is also widely attributed to the rollout of reasoning models rather than to demand growth. Weight this point down or drop it in any fit."
+      },
+      {
+        "sIso": "2025-10",
+        "dTokensPerMonth": 1.30e15,
+        "sSource": "Reported October 2025.",
+        "sUrl": "https://the-decoder.com/google-boasts-1-3-quadrillion-tokens-each-month-but-the-figure-is-mostly-window-dressing/",
+        "sAccessedIso": "2026-07-27",
+        "sSourceConfidence": "primary"
+      },
+      {
+        "sIso": "2026-05",
+        "dTokensPerMonth": 3.20e15,
+        "sSource": "Sundar Pichai, Google I/O keynote, 19 May 2026. Stated as '7x Y/Y growth'.",
+        "sUrl": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
+        "sAccessedIso": "2026-07-27",
+        "sSourceConfidence": "primary"
+      }
+    ],
+    "dictObservedGrowthFactors": {
+      "sUnits": "multiplicative factor per year",
+      "d2024May_to_2025May": 49.6,
+      "d2025May_to_2026May": 6.67,
+      "d2025Oct_to_2026May": 4.72,
+      "sNote": "Growth is decelerating sharply and monotonically. Absolute monthly additions fell from roughly 250e12 tokens/month (May-July 2025) to roughly 107e12 tokens/month (July-October 2025). This is the central honesty point of the whole calculation: throughput is super-exponential in absolute terms but sub-exponential in log space, so the extrapolated onset date is set almost entirely by which growth model is fitted, not by the data.",
+      "sDecelerationSource": "https://tomtunguz.com/is-token-consumption-slowing-down/",
+      "sSourceConfidence": "primary"
+    },
+    "dGoogleShareOfGlobalTokens": {
+      "dValue": null,
+      "daPlausibleRange": [0.25, 0.60],
+      "sNote": "UNMEASURED. No operator publishes a global token total, and the other frontier labs do not publish comparable series. Any conversion from the Google series to a global one passes through this number, so it must be carried as a free parameter with a stated range, never as a point estimate."
+    }
+  },
+
+  "dictEnergyPerToken": {
+    "sQuantity": "Electrical energy dissipated per token, which for a data centre equals waste heat per token to within the negligible fraction radiated away as light or stored chemically.",
+    "sUnits": "joules per token",
+    "sCriticalDistinction": "Device-level decode measurements and system-level implied values differ by one to two orders of magnitude, and they are not measuring the same thing. Device-level values count GPU energy for output tokens only. System-level values additionally carry prompt/prefill processing, idle provisioned capacity, host CPU and memory, cooling and data-centre overhead, multimodal work, and amortised training. The analysis must state which it uses; the contour figure should span both.",
+    "listDeviceLevelObservations": [
+      {
+        "sLabel": "Llama 3.1 8B, H100, vLLM, batch size 64",
+        "dJoulesPerOutputToken": 0.12,
+        "dPriorValue": 0.20,
+        "sNote": "0.20 J/token in September 2024 falling to 0.12 J/token by December 2025 through software optimisation alone.",
+        "sSource": "ML.ENERGY Leaderboard v3.0 longitudinal analysis.",
+        "sUrl": "https://ml.energy/blog/measurement/energy/llm-inference-energy-a-longitudinal-analysis/",
+        "sAccessedIso": "2026-07-27",
+        "sSourceConfidence": "primary"
+      },
+      {
+        "sLabel": "Llama 3 70B, H100, FP8 quantisation",
+        "dJoulesPerOutputToken": 0.39,
+        "sSource": "Reported in inference-efficiency literature summary.",
+        "sSourceConfidence": "secondary",
+        "sPendingAction": "Re-source from the ML.ENERGY leaderboard directly before publication."
+      },
+      {
+        "sLabel": "Llama 65B, V100 (legacy hardware, ca. 2023)",
+        "daJoulesPerOutputTokenRange": [3.0, 4.0],
+        "sNote": "Retained to set the historical scale: roughly a 10x efficiency gain to the H100/FP8 generation.",
+        "sSourceConfidence": "secondary"
+      },
+      {
+        "sLabel": "Literature spread across model sizes",
+        "daJoulesPerOutputTokenRange": [0.36, 7.2],
+        "sNote": "Quoted as 0.0001 to 0.002 Wh per output token depending on model size.",
+        "sSourceConfidence": "secondary",
+        "sPendingAction": "Re-source; this is the widest published spread and it currently rests on an aggregator summary."
+      }
+    ],
+    "dictSystemLevelObservations": {
+      "dGoogleMedianTextPromptJoules": {
+        "dValue": 864.0,
+        "dValueWattHours": 0.24,
+        "sBoundary": "Full stack: AI accelerator 0.14 Wh (58%), host CPU and DRAM 0.06 Wh (25%), provisioned idle capacity 0.02 Wh, data-centre overhead 0.02 Wh.",
+        "sNote": "Per PROMPT, not per token, and a median rather than a mean. Google reports a 33x energy reduction for this metric over the preceding year. Converting to a per-token figure requires an assumed tokens-per-prompt, which Google does not publish.",
+        "sSource": "Elsworth, Huang, Patterson, Schneider, Sedivy, Goodman, Townsend, Ranganathan, Dean, Vahdat, Gomes, Manyika, 'Measuring the environmental impact of delivering AI at Google Scale', arXiv:2508.15734, 21 August 2025.",
+        "sUrl": "https://arxiv.org/abs/2508.15734",
+        "sAccessedIso": "2026-07-27",
+        "sSourceConfidence": "primary"
+      },
+      "daImpliedSystemLevelJoulesPerTokenRange": {
+        "daValue": [3.0, 14.0],
+        "sDerivation": "Global AI-server electricity divided by an estimated global token throughput. DERIVED HERE, NOT OBSERVED. It exceeds the device-level decode figures by roughly an order of magnitude, which is expected given the boundary difference, but it also inherits the unmeasured Google-share parameter. Use it to set the upper end of the contour axis, not as a measurement."
+      }
+    },
+    "daSuggestedContourAxisJoulesPerToken": [0.1, 20.0],
+    "sEfficiencyTrend": "Energy per token is falling fast: 15 to 41 percent lower per token over 15 months from software alone, on top of hardware generational gains. A model that holds energy per token fixed while throughput grows will overstate warming. The efficiency trend is itself a candidate third axis."
+  },
+
+  "dictDataCentrePower": {
+    "sQuantity": "Electrical power drawn by data centres, taken as equal to waste heat delivered to the environment.",
+    "sUnits": "watts (converted from TWh/yr by dividing by 8760 h)",
+    "listObservations": [
+      {
+        "sIso": "2024",
+        "sLabel": "All data centres, global",
+        "dTerawattHoursPerYear": 415.0,
+        "dWatts": 4.737e10,
+        "sNote": "About 1.5 percent of global electricity consumption; grew about 12 percent per year over the preceding five years. This is the figure behind the commonly quoted 'today' anchor.",
+        "sSource": "IEA, Energy and AI, 'Energy demand from AI'.",
+        "sUrl": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+        "sAccessedIso": "2026-07-27",
+        "sSourceConfidence": "primary"
+      },
+      {
+        "sIso": "2025",
+        "sLabel": "All data centres, global",
+        "dTerawattHoursPerYear": 447.0,
+        "dWatts": 5.103e10,
+        "sSource": "Gartner, November 2025.",
+        "sUrl": "https://www.gartner.com/en/newsroom/press-releases/2025-11-17-gartner-says-electricity-demand-for-data-centers-to-grow-16-percent-in-2025-and-double-by-2030",
+        "sAccessedIso": "2026-07-27",
+        "sSourceConfidence": "secondary"
+      },
+      {
+        "sIso": "2025",
+        "sLabel": "AI-optimised servers only, global",
+        "dTerawattHoursPerYear": 93.0,
+        "dWatts": 1.062e10,
+        "sNote": "About 21 percent of all data-centre power in 2025, rising to about 31 percent in 2026.",
+        "sSource": "Gartner.",
+        "sSourceConfidence": "secondary"
+      },
+      {
+        "sIso": "2025-Q4",
+        "sLabel": "AI data centre power CAPACITY, global",
+        "dWatts": 3.0e10,
+        "sNote": "Rated capacity, not consumption: chip TDP times units sold for five major vendors, times a 2.5x non-chip overhead multiplier. Represents all chips running simultaneously at full utilisation, so it is an upper bound on instantaneous draw and is not directly comparable to the consumption figures above. Stated to be doubling roughly every 7 months.",
+        "sSource": "Epoch AI.",
+        "sUrl": "https://epoch.ai/data-insights/ai-datacenter-power",
+        "sAccessedIso": "2026-07-27",
+        "sSourceConfidence": "primary"
+      },
+      {
+        "sIso": "2026",
+        "sLabel": "All data centres, global (forecast)",
+        "dTerawattHoursPerYear": 565.0,
+        "dWatts": 6.450e10,
+        "sSource": "Gartner, forecast.",
+        "sSourceConfidence": "secondary"
+      }
+    ],
+    "dictProjections": {
+      "d2030BaseCaseTerawattHoursPerYear": 945.0,
+      "sBaseCaseNote": "IEA base case: roughly doubling from 2024 to 2030, about 15 percent per year, reaching just under 3 percent of global electricity. Accelerated (AI) servers grow about 30 percent per year and account for almost half the net increase.",
+      "dict2035ScenarioTerawattHoursPerYear": {
+        "dHighEfficiencyCase": 970.0,
+        "dLiftOffCase": 1700.0,
+        "dHeadwindsCase": 700.0
+      },
+      "sNote": "The IEA scenario spread at 2035 is only a factor of 2.4, whereas naive extrapolation of the token series over the same interval spans many orders of magnitude. That gap between what energy analysts project and what the token curve implies is worth showing explicitly.",
+      "sSource": "IEA, Energy and AI.",
+      "sUrl": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+      "sSourceConfidence": "primary"
+    },
+    "daSuggestedContourAxisGrowthFactorPerYear": [1.15, 8.0],
+    "sGrowthAxisNote": "Lower bound is the historical pre-AI data-centre growth rate (about 12 to 15 percent per year); upper bound is a little above the most recent observed Google token growth (4.7 to 6.7x per year). The observed 49x for 2024-2025 is deliberately excluded from the axis as an artefact of a small base and a product launch."
+  },
+
+  "dictComparisonAnchors": {
+    "sPurpose": "Scale references for the final figure. Each is a power that the required 3.10e16 W can be measured against.",
+    "dAbsorbedSolarPowerWatts": {
+      "dValue": 1.2253e17,
+      "sNote": "Total sunlight absorbed by Earth. The required waste heat is about 25 percent of this, which is the headline absurdity: AI would have to become a quarter of the Sun's delivered power at Earth."
+    },
+    "dHumanPrimaryEnergyWatts": {
+      "dValue": 1.965e13,
+      "sNote": "All human primary energy consumption, about 620 EJ/yr. The required waste heat exceeds this by a factor of about 1580, so the threshold cannot be reached by redirecting existing energy use; it requires roughly three orders of magnitude of new generation.",
+      "sSourceConfidence": "secondary",
+      "sPendingAction": "Attach the specific IEA or Energy Institute year and figure."
+    },
+    "dCurrentAllDataCentreWatts": {
+      "dValue": 4.737e10,
+      "sNote": "The required waste heat is about 655000 times present-day total data-centre power."
+    },
+    "dCurrentAiServerWatts": {
+      "dValue": 1.062e10,
+      "sNote": "The required waste heat is about 2.9 million times present-day AI-server power."
+    }
+  },
+
+  "listCaveats": [
+    "A token is not a fixed unit of work. Reasoning models emit many more tokens per user request than their predecessors (one report puts Gemini Flash 2.5 at about 17x its predecessor), so a rising token count partly measures a change in how answers are produced rather than a rise in demand. The May-to-June 2025 doubling is widely read this way.",
+    "Google's token totals mix text, image, audio, and video processing without separating them, and these differ greatly in energy per token.",
+    "Token throughput and data-centre electricity are two independent routes to the same waste-heat number, and they currently disagree by roughly an order of magnitude. Carrying both, and showing the disagreement, is more honest than picking one.",
+    "Growth is decelerating on every measured interval. Fitting a single exponential to the full 2024-2026 series will produce an onset date that the recent data do not support.",
+    "Efficiency is improving at a rate comparable to the deceleration in growth. A model that holds joules per token fixed is not conservative, it is wrong in a known direction.",
+    "Waste heat is a genuinely negligible forcing at present scales; the greenhouse effect of the CO2 emitted in generating that electricity dominates by orders of magnitude. The calculation is a scale argument about a physical ceiling, not a claim that AI warms the planet this way. This must be stated in the figure caption, not buried.",
+    "All electrical energy delivered to a data centre becomes heat, so no conversion efficiency factor applies between power draw and waste heat. This is the one step in the chain with no uncertainty."
+  ],
+
+  "listPendingActions": [
+    "Attach a specific radiative-transfer citation for the 280-310 W/m^2 outgoing-flux limit.",
+    "Re-source the eight records marked sSourceConfidence 'secondary' from their primary documents. The Gartner data-centre figures and the human-primary-energy anchor are the ones a reviewer is most likely to challenge.",
+    "Decide whether the second figure's axes are (growth rate, joules per token) or (growth rate, efficiency improvement rate); the current axis suggestions assume the former."
+  ]
+}
