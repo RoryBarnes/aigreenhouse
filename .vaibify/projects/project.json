@@ -132,7 +132,68 @@
       "bNoInputData": true
     }
   ],
-  "dictSyncStatus": {},
+  "dictSyncStatus": {
+    "Plot/aiPowerOverTime.png": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": true,
+      "sGithubTimestamp": "2026-08-21T23:47:11Z",
+      "bZenodo": false,
+      "sZenodoTimestamp": "",
+      "sZenodoLastPushedDigest": "",
+      "sZenodoLastPushedEndpoint": "",
+      "sGithubCommit": "b560824aa4b4fac5fb1564dfe64b1b2cb4b68fcc"
+    },
+    "Plot/yearsToThresholdContour.png": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": true,
+      "sGithubTimestamp": "2026-08-21T23:47:11Z",
+      "bZenodo": false,
+      "sZenodoTimestamp": "",
+      "sZenodoLastPushedDigest": "",
+      "sZenodoLastPushedEndpoint": "",
+      "sGithubCommit": "b560824aa4b4fac5fb1564dfe64b1b2cb4b68fcc"
+    },
+    "AiPowerOverTime/aiPowerFits.json": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": true,
+      "sGithubTimestamp": "2026-08-21T23:47:11Z",
+      "bZenodo": false,
+      "sZenodoTimestamp": "",
+      "sZenodoLastPushedDigest": "",
+      "sZenodoLastPushedEndpoint": "",
+      "sGithubCommit": "b560824aa4b4fac5fb1564dfe64b1b2cb4b68fcc"
+    },
+    "YearsToThresholdContour/yearsToThresholdGrid.npz": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": true,
+      "sGithubTimestamp": "2026-08-21T23:47:11Z",
+      "bZenodo": false,
+      "sZenodoTimestamp": "",
+      "sZenodoLastPushedDigest": "",
+      "sZenodoLastPushedEndpoint": "",
+      "sGithubCommit": "b560824aa4b4fac5fb1564dfe64b1b2cb4b68fcc"
+    },
+    "YearsToThresholdContour/contourMarkers.json": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": true,
+      "sGithubTimestamp": "2026-08-21T23:47:11Z",
+      "bZenodo": false,
+      "sZenodoTimestamp": "",
+      "sZenodoLastPushedDigest": "",
+      "sZenodoLastPushedEndpoint": "",
+      "sGithubCommit": "b560824aa4b4fac5fb1564dfe64b1b2cb4b68fcc"
+    }
+  },
   "iWorkflowSchemaVersion": 12,
   "sFigureType": "png",
   "iNumberOfCores": 1,
