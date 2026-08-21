@@ -1,0 +1,19 @@
+{
+  "sDirectory": "YearsToThresholdContour",
+  "sLabel": "A02",
+  "iExitStatus": 0,
+  "fTimestamp": 1787355056.6833072,
+  "sRunAtUtc": "2026-08-21T23:30:56Z",
+  "iCollected": 8,
+  "dictCategories": {
+    "quantitative": {
+      "iPassed": 8,
+      "iFailed": 0
+    }
+  },
+  "dictOutputHashes": {
+    "YearsToThresholdContour/yearsToThresholdGrid.npz": "3363ce377e241f0f5cbaf8e28f8c75a2b73e33fd",
+    "YearsToThresholdContour/contourMarkers.json": "631229e490e6378f7afac5bbd634926ff53176d3"
+  },
+  "dictInputHashes": {}
+}

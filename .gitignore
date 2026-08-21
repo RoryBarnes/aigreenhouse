@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Machine-local vaibify caches (state.json itself is ignored by .vaibify/.gitignore)
+.vaibify/state.json.bak
+.vaibify/container_mtime_cache.json

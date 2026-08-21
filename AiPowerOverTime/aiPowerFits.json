@@ -1,0 +1,42 @@
+{
+  "dEnergyPerTokenJoules": 1.0,
+  "dGoogleFraction": 0.1,
+  "dReferenceYear": 2025.0,
+  "dThresholdWatts": 3.0493439356418828e+16,
+  "daObservedTokensPerMonth": [
+    9700000000000.0,
+    480000000000000.0,
+    980000000000000.0,
+    1300000000000000.0,
+    3200000000000000.0
+  ],
+  "daObservedYears": [
+    2024.3333333333333,
+    2025.3333333333333,
+    2025.4166666666667,
+    2025.75,
+    2026.3333333333333
+  ],
+  "listFits": [
+    {
+      "bContourReference": false,
+      "dDoublingTimeYears": 0.23430512396806535,
+      "dOnsetYear": 2031.0751363623046,
+      "dPowerAt2025Watts": 477536702.33298,
+      "dTokensAt2025": 125582601979527.1,
+      "dYearsToThreshold": 6.07513636230473,
+      "sColor": "dark_blue",
+      "sLabel": "All points"
+    },
+    {
+      "bContourReference": true,
+      "dDoublingTimeYears": 0.4204023689540283,
+      "dOnsetYear": 2035.2484758035432,
+      "dPowerAt2025Watts": 1398826576.3818765,
+      "dTokensAt2025": 367863413056905.94,
+      "dYearsToThreshold": 10.24847580354313,
+      "sColor": "purple",
+      "sLabel": "2024-05 dropped"
+    }
+  ]
+}

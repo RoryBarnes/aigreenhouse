@@ -1,0 +1,64 @@
+projectName: ai-greenhouse
+containerUser: researcher
+pythonVersion: '3.12'
+baseImage: ubuntu:24.04
+workspaceRoot: /workspace
+packageManager: pip
+repositories: []
+systemPackages:
+- gcc
+- make
+- git
+- curl
+- ca-certificates
+- gnupg
+- gosu
+- time
+pythonPackages:
+- matplotlib
+- numpy
+- vplot
+pipInstallFlags: --prefer-binary
+condaPackages: []
+binaries: []
+ports: []
+bindMounts: []
+secrets:
+- name: gh_token
+  method: gh_auth
+networkIsolation: false
+neverSleep: true
+dashboardPort: 0
+cpuLimit: 1
+memoryLimitGigabytes: 1.0
+features:
+  jupyter: false
+  rLanguage: false
+  julia: false
+  database: false
+  dvc: false
+  nestedSampling: false
+  latex: true
+  claude: true
+  claudeAutoUpdate: true
+  codex: true
+  codexAutoUpdate: true
+  gemini: false
+  geminiAutoUpdate: true
+  opencode: false
+  opencodeAutoUpdate: true
+  cline: false
+  clineAutoUpdate: true
+  openhands: false
+  openhandsAutoUpdate: true
+  pi: false
+  piAutoUpdate: true
+  gpu: false
+reproducibility:
+  zenodoService: sandbox
+  latexRoot: src/tex
+  figuresRoot: src/tex/figures
+  overleaf:
+    projectId: ''
+    figureDirectory: figures
+    pullPaths: []

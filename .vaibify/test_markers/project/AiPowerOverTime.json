@@ -1,0 +1,20 @@
+{
+  "sDirectory": "AiPowerOverTime",
+  "sLabel": "A01",
+  "iExitStatus": 0,
+  "fTimestamp": 1787355054.7212615,
+  "sRunAtUtc": "2026-08-21T23:30:54Z",
+  "iCollected": 15,
+  "dictCategories": {
+    "quantitative": {
+      "iPassed": 15,
+      "iFailed": 0
+    }
+  },
+  "dictOutputHashes": {
+    "AiPowerOverTime/aiPowerFits.json": "0ccbe544898d69d840346d6297257bf4b531bd8a"
+  },
+  "dictInputHashes": {
+    "aiWasteHeatData.json": "244a6e391e8612b3a96361925d4c282f6208bbb7"
+  }
+}

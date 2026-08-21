@@ -1,0 +1,18 @@
+{
+  "listMarkers": [
+    {
+      "bContourReference": false,
+      "dDoublingTimeYears": 0.23430512396806535,
+      "dEnergyPerTokenJoules": 1.0,
+      "sColor": "dark_blue",
+      "sLabel": "All points (6.1 yr)"
+    },
+    {
+      "bContourReference": true,
+      "dDoublingTimeYears": 0.4204023689540283,
+      "dEnergyPerTokenJoules": 1.0,
+      "sColor": "purple",
+      "sLabel": "2024-05 dropped (10.2 yr)"
+    }
+  ]
+}
