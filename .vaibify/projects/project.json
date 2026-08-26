@@ -212,6 +212,66 @@
       "sZenodoLastPushedDigest": "",
       "sZenodoLastPushedEndpoint": "",
       "sGithubCommit": "b560824aa4b4fac5fb1564dfe64b1b2cb4b68fcc"
+    },
+    "AI_USAGE.md": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": true,
+      "sGithubTimestamp": "2026-08-25T21:39:25Z",
+      "bZenodo": false,
+      "sZenodoTimestamp": "",
+      "sZenodoLastPushedDigest": "",
+      "sZenodoLastPushedEndpoint": "",
+      "sGithubCommit": "df10da722320bec64ead11514f577585cc678432"
+    },
+    "AiPowerOverTime/tests/qualitative_standards.json": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": true,
+      "sGithubTimestamp": "2026-08-25T21:39:25Z",
+      "bZenodo": false,
+      "sZenodoTimestamp": "",
+      "sZenodoLastPushedDigest": "",
+      "sZenodoLastPushedEndpoint": "",
+      "sGithubCommit": "df10da722320bec64ead11514f577585cc678432"
+    },
+    "AiPowerOverTime/tests/test_qualitative.py": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": true,
+      "sGithubTimestamp": "2026-08-25T21:39:25Z",
+      "bZenodo": false,
+      "sZenodoTimestamp": "",
+      "sZenodoLastPushedDigest": "",
+      "sZenodoLastPushedEndpoint": "",
+      "sGithubCommit": "df10da722320bec64ead11514f577585cc678432"
+    },
+    "YearsToThresholdContour/tests/qualitative_standards.json": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": true,
+      "sGithubTimestamp": "2026-08-25T21:39:25Z",
+      "bZenodo": false,
+      "sZenodoTimestamp": "",
+      "sZenodoLastPushedDigest": "",
+      "sZenodoLastPushedEndpoint": "",
+      "sGithubCommit": "df10da722320bec64ead11514f577585cc678432"
+    },
+    "YearsToThresholdContour/tests/test_qualitative.py": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": true,
+      "sGithubTimestamp": "2026-08-25T21:39:25Z",
+      "bZenodo": false,
+      "sZenodoTimestamp": "",
+      "sZenodoLastPushedDigest": "",
+      "sZenodoLastPushedEndpoint": "",
+      "sGithubCommit": "df10da722320bec64ead11514f577585cc678432"
     }
   },
   "iWorkflowSchemaVersion": 12,
