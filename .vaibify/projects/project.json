@@ -169,7 +169,7 @@
       "bGithub": true,
       "sGithubTimestamp": "2026-08-21T23:47:11Z",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
       "sZenodoLastPushedDigest": "68fa057e3879213c4d59e83bebcfbc6b109a305d",
       "sZenodoLastPushedEndpoint": "sandbox",
       "sGithubCommit": "b560824aa4b4fac5fb1564dfe64b1b2cb4b68fcc"
@@ -181,7 +181,7 @@
       "bGithub": true,
       "sGithubTimestamp": "2026-08-21T23:47:11Z",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
       "sZenodoLastPushedDigest": "c6f79a0eaec750efb04c42f04500c0922258eb51",
       "sZenodoLastPushedEndpoint": "sandbox",
       "sGithubCommit": "b560824aa4b4fac5fb1564dfe64b1b2cb4b68fcc"
@@ -193,7 +193,7 @@
       "bGithub": true,
       "sGithubTimestamp": "2026-08-21T23:47:11Z",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
       "sZenodoLastPushedDigest": "0ccbe544898d69d840346d6297257bf4b531bd8a",
       "sZenodoLastPushedEndpoint": "sandbox",
       "sGithubCommit": "b560824aa4b4fac5fb1564dfe64b1b2cb4b68fcc"
@@ -205,7 +205,7 @@
       "bGithub": true,
       "sGithubTimestamp": "2026-08-21T23:47:11Z",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
       "sZenodoLastPushedDigest": "3363ce377e241f0f5cbaf8e28f8c75a2b73e33fd",
       "sZenodoLastPushedEndpoint": "sandbox",
       "sGithubCommit": "b560824aa4b4fac5fb1564dfe64b1b2cb4b68fcc"
@@ -217,7 +217,7 @@
       "bGithub": true,
       "sGithubTimestamp": "2026-08-21T23:47:11Z",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
       "sZenodoLastPushedDigest": "631229e490e6378f7afac5bbd634926ff53176d3",
       "sZenodoLastPushedEndpoint": "sandbox",
       "sGithubCommit": "b560824aa4b4fac5fb1564dfe64b1b2cb4b68fcc"
@@ -289,7 +289,7 @@
       "bGithub": false,
       "sGithubTimestamp": "",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
       "sZenodoLastPushedDigest": "fdf36c923a67bbc4ee9e546f684ac942064a7495",
       "sZenodoLastPushedEndpoint": "sandbox"
     },
@@ -300,7 +300,7 @@
       "bGithub": false,
       "sGithubTimestamp": "",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
       "sZenodoLastPushedDigest": "b633c3dce1418ca6f7ee4dbc41cba9be3ea09022",
       "sZenodoLastPushedEndpoint": "sandbox"
     },
@@ -311,8 +311,8 @@
       "bGithub": false,
       "sGithubTimestamp": "",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
-      "sZenodoLastPushedDigest": "a624c65b87dab16e89c6c26d252346bd0a687fb9",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
+      "sZenodoLastPushedDigest": "7ee6b819f23b37231a306644e9522d26694cfa19",
       "sZenodoLastPushedEndpoint": "sandbox"
     },
     "AiPowerOverTime/tests/test_integrity_aiPowerOverTime.py": {
@@ -322,8 +322,8 @@
       "bGithub": false,
       "sGithubTimestamp": "",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
-      "sZenodoLastPushedDigest": "2a270d6271ef7b1177bc03e2faac2b118665c4c2",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
+      "sZenodoLastPushedDigest": "56de8788e6ad830fcd36ad5a193939436006d10f",
       "sZenodoLastPushedEndpoint": "sandbox"
     },
     "YearsToThresholdContour/dataYearsToThresholdContour.py": {
@@ -333,7 +333,7 @@
       "bGithub": false,
       "sGithubTimestamp": "",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
       "sZenodoLastPushedDigest": "9e00d4f81b19d5430ba20d9e15db1ccbc11c1349",
       "sZenodoLastPushedEndpoint": "sandbox"
     },
@@ -344,7 +344,7 @@
       "bGithub": false,
       "sGithubTimestamp": "",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
       "sZenodoLastPushedDigest": "a183a82c5c3dc36ba67a74c4a56e1fdd33d352df",
       "sZenodoLastPushedEndpoint": "sandbox"
     },
@@ -355,8 +355,8 @@
       "bGithub": false,
       "sGithubTimestamp": "",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
-      "sZenodoLastPushedDigest": "997dc2c31ea578df3a7d8f2a0862e1d6171976ec",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
+      "sZenodoLastPushedDigest": "7ee6b819f23b37231a306644e9522d26694cfa19",
       "sZenodoLastPushedEndpoint": "sandbox"
     },
     "YearsToThresholdContour/tests/test_integrity_yearsToThresholdContour.py": {
@@ -366,8 +366,96 @@
       "bGithub": false,
       "sGithubTimestamp": "",
       "bZenodo": true,
-      "sZenodoTimestamp": "2026-08-27T05:08:32Z",
-      "sZenodoLastPushedDigest": "05c337512655d22df86017eb7e0f37ced5500c96",
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
+      "sZenodoLastPushedDigest": "56de8788e6ad830fcd36ad5a193939436006d10f",
+      "sZenodoLastPushedEndpoint": "sandbox"
+    },
+    "AiPowerOverTime/tests/test_qualitative_aiPowerOverTime.py": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": false,
+      "sGithubTimestamp": "",
+      "bZenodo": true,
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
+      "sZenodoLastPushedDigest": "8e315de7709b4b1af8b0bc9a78b88e7b9bf42aa2",
+      "sZenodoLastPushedEndpoint": "sandbox"
+    },
+    "AiPowerOverTime/tests/qualitative_standards_aiPowerOverTime.json": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": false,
+      "sGithubTimestamp": "",
+      "bZenodo": true,
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
+      "sZenodoLastPushedDigest": "06d5ed8e50405acf8525ef9e6cd3ce527300037b",
+      "sZenodoLastPushedEndpoint": "sandbox"
+    },
+    "AiPowerOverTime/tests/quantitative_standards_aiPowerOverTime.json": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": false,
+      "sGithubTimestamp": "",
+      "bZenodo": true,
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
+      "sZenodoLastPushedDigest": "b4ec9dcb02656fa7932e718d24464c06930294a6",
+      "sZenodoLastPushedEndpoint": "sandbox"
+    },
+    "AiPowerOverTime/tests/integrity_standards_aiPowerOverTime.json": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": false,
+      "sGithubTimestamp": "",
+      "bZenodo": true,
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
+      "sZenodoLastPushedDigest": "6d4247d1dbeacc9e906288d76e6c14afecc3b37a",
+      "sZenodoLastPushedEndpoint": "sandbox"
+    },
+    "YearsToThresholdContour/tests/test_qualitative_yearsToThresholdContour.py": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": false,
+      "sGithubTimestamp": "",
+      "bZenodo": true,
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
+      "sZenodoLastPushedDigest": "8e315de7709b4b1af8b0bc9a78b88e7b9bf42aa2",
+      "sZenodoLastPushedEndpoint": "sandbox"
+    },
+    "YearsToThresholdContour/tests/qualitative_standards_yearsToThresholdContour.json": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": false,
+      "sGithubTimestamp": "",
+      "bZenodo": true,
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
+      "sZenodoLastPushedDigest": "f1fe8dfe5bf7b4b04612a6e24cc54baab189656f",
+      "sZenodoLastPushedEndpoint": "sandbox"
+    },
+    "YearsToThresholdContour/tests/quantitative_standards_yearsToThresholdContour.json": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": false,
+      "sGithubTimestamp": "",
+      "bZenodo": true,
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
+      "sZenodoLastPushedDigest": "31968abc5dd90538403f402b2e9bf9010d0af382",
+      "sZenodoLastPushedEndpoint": "sandbox"
+    },
+    "YearsToThresholdContour/tests/integrity_standards_yearsToThresholdContour.json": {
+      "bOverleaf": false,
+      "sOverleafTimestamp": "",
+      "sOverleafLastPushedDigest": "",
+      "bGithub": false,
+      "sGithubTimestamp": "",
+      "bZenodo": true,
+      "sZenodoTimestamp": "2026-08-27T15:44:02Z",
+      "sZenodoLastPushedDigest": "b568bc9a78a0e96ef01577a48ad82718415259d6",
       "sZenodoLastPushedEndpoint": "sandbox"
     }
   },
@@ -403,10 +491,10 @@
     "listKeywords": [],
     "sRelatedGithubUrl": ""
   },
-  "sZenodoDepositionId": "593037",
-  "sZenodoLatestDoi": "10.5072/zenodo.593037",
+  "sZenodoDepositionId": "593177",
+  "sZenodoLatestDoi": "10.5072/zenodo.593177",
   "sZenodoConceptDoi": "10.5072/zenodo.593036",
-  "sZenodoLatestUrl": "https://sandbox.zenodo.org/records/593037",
+  "sZenodoLatestUrl": "https://sandbox.zenodo.org/records/593177",
   "dictRemotes": {
     "zenodo": {
       "sRecordId": "593037",
