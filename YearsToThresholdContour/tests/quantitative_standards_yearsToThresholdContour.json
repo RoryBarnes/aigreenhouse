@@ -1,0 +1,153 @@
+{
+    "fDefaultRtol": 1e-06,
+    "sStochasticityClassification": "deterministic",
+    "listStandards": [
+        {
+            "sName": "fdaDoublingTimesMean",
+            "sDataFile": "yearsToThresholdGrid.npz",
+            "sAccessPath": "key:daDoublingTimes,index:mean",
+            "fValue": 1.4967801740980873,
+            "sUnit": "",
+            "sMetricKind": "mean",
+            "iSampleSize": 200,
+            "fObservedCv": 0.8682158584654053,
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdaEnergiesPerTokenMean",
+            "sDataFile": "yearsToThresholdGrid.npz",
+            "sAccessPath": "key:daEnergiesPerToken,index:mean",
+            "fValue": 3.7876006133898787,
+            "sUnit": "",
+            "sMetricKind": "mean",
+            "iSampleSize": 200,
+            "fObservedCv": 1.302631375262707,
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdaaYearsToThresholdMean",
+            "sDataFile": "yearsToThresholdGrid.npz",
+            "sAccessPath": "key:daaYearsToThreshold,index:mean",
+            "fValue": 35.73978536170715,
+            "sUnit": "",
+            "sMetricKind": "mean",
+            "iSampleSize": 40000,
+            "fObservedCv": 0.874725272405572,
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdaContourLevelsMean",
+            "sDataFile": "yearsToThresholdGrid.npz",
+            "sAccessPath": "key:daContourLevels,index:mean",
+            "fValue": 47.5,
+            "sUnit": "",
+            "sMetricKind": "mean",
+            "iSampleSize": 6,
+            "fObservedCv": 0.7285244830736116,
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdaLabelDoublingTimesMean",
+            "sDataFile": "yearsToThresholdGrid.npz",
+            "sAccessPath": "key:daLabelDoublingTimes,index:mean",
+            "fValue": 1.9880839182933638,
+            "sUnit": "",
+            "sMetricKind": "mean",
+            "iSampleSize": 6,
+            "fObservedCv": 0.7285244830736118,
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdaLabelEnergiesMean",
+            "sDataFile": "yearsToThresholdGrid.npz",
+            "sAccessPath": "key:daLabelEnergies,index:mean",
+            "fValue": 1.4000000000000001,
+            "sUnit": "",
+            "sMetricKind": "mean",
+            "iSampleSize": 6,
+            "fObservedCv": 1.7374119841394619e-16,
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdTokensAt2025Mean",
+            "sDataFile": "yearsToThresholdGrid.npz",
+            "sAccessPath": "key:dTokensAt2025,index:mean",
+            "fValue": 367863413056905.94,
+            "sUnit": "",
+            "sMetricKind": "mean",
+            "iSampleSize": 1,
+            "fObservedCv": 0.0,
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdGoogleFractionMean",
+            "sDataFile": "yearsToThresholdGrid.npz",
+            "sAccessPath": "key:dGoogleFraction,index:mean",
+            "fValue": 0.1,
+            "sUnit": "",
+            "sMetricKind": "mean",
+            "iSampleSize": 1,
+            "fObservedCv": 0.0,
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdThresholdWattsMean",
+            "sDataFile": "yearsToThresholdGrid.npz",
+            "sAccessPath": "key:dThresholdWatts,index:mean",
+            "fValue": 3.0493439356418828e+16,
+            "sUnit": "",
+            "sMetricKind": "mean",
+            "iSampleSize": 1,
+            "fObservedCv": 0.0,
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistMarkers_0_bContourReference",
+            "sDataFile": "contourMarkers.json",
+            "sAccessPath": "key:listMarkers.0.bContourReference",
+            "fValue": 0.0,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistMarkers_0_dDoublingTimeYears",
+            "sDataFile": "contourMarkers.json",
+            "sAccessPath": "key:listMarkers.0.dDoublingTimeYears",
+            "fValue": 0.23430512396806535,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistMarkers_0_dEnergyPerTokenJoules",
+            "sDataFile": "contourMarkers.json",
+            "sAccessPath": "key:listMarkers.0.dEnergyPerTokenJoules",
+            "fValue": 1.0,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistMarkers_1_bContourReference",
+            "sDataFile": "contourMarkers.json",
+            "sAccessPath": "key:listMarkers.1.bContourReference",
+            "fValue": 1.0,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistMarkers_1_dDoublingTimeYears",
+            "sDataFile": "contourMarkers.json",
+            "sAccessPath": "key:listMarkers.1.dDoublingTimeYears",
+            "fValue": 0.4204023689540283,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistMarkers_1_dEnergyPerTokenJoules",
+            "sDataFile": "contourMarkers.json",
+            "sAccessPath": "key:listMarkers.1.dEnergyPerTokenJoules",
+            "fValue": 1.0,
+            "sUnit": "",
+            "fRtol": 1e-06
+        }
+    ]
+}

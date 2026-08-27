@@ -1,0 +1,22 @@
+{
+    "listStandards": [
+        {
+            "sFileName": "yearsToThresholdGrid.npz",
+            "sFormat": "npz",
+            "tExpectedShape": [],
+            "sDtype": "float64",
+            "bCheckNaN": true,
+            "bCheckInf": true,
+            "iExpectedByteSize": 325768
+        },
+        {
+            "sFileName": "contourMarkers.json",
+            "sFormat": "json",
+            "tExpectedShape": null,
+            "sDtype": "",
+            "bCheckNaN": false,
+            "bCheckInf": false,
+            "iExpectedByteSize": 425
+        }
+    ]
+}

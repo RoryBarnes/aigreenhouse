@@ -1,0 +1,156 @@
+{
+    "fDefaultRtol": 1e-06,
+    "sStochasticityClassification": "deterministic",
+    "listStandards": [
+        {
+            "sName": "fdEnergyPerTokenJoules",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:dEnergyPerTokenJoules",
+            "fValue": 1.0,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdGoogleFraction",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:dGoogleFraction",
+            "fValue": 0.1,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdReferenceYear",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:dReferenceYear",
+            "fValue": 2025.0,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdThresholdWatts",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:dThresholdWatts",
+            "fValue": 3.0493439356418828e+16,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdaObservedTokensPerMonthMean",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:daObservedTokensPerMonth,index:mean",
+            "fValue": 1193940000000000.0,
+            "sUnit": "",
+            "sMetricKind": "mean",
+            "iSampleSize": 5,
+            "fObservedCv": 1.0252392817990534,
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "fdaObservedYearsMean",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:daObservedYears,index:mean",
+            "fValue": 2025.4333333333332,
+            "sUnit": "",
+            "sMetricKind": "mean",
+            "iSampleSize": 5,
+            "fObservedCv": 0.0003603283913863953,
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistFits_0_bContourReference",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:listFits.0.bContourReference",
+            "fValue": 0.0,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistFits_0_dDoublingTimeYears",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:listFits.0.dDoublingTimeYears",
+            "fValue": 0.23430512396806535,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistFits_0_dOnsetYear",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:listFits.0.dOnsetYear",
+            "fValue": 2031.0751363623046,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistFits_0_dPowerAt2025Watts",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:listFits.0.dPowerAt2025Watts",
+            "fValue": 477536702.33298,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistFits_0_dTokensAt2025",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:listFits.0.dTokensAt2025",
+            "fValue": 125582601979527.1,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistFits_0_dYearsToThreshold",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:listFits.0.dYearsToThreshold",
+            "fValue": 6.07513636230473,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistFits_1_bContourReference",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:listFits.1.bContourReference",
+            "fValue": 1.0,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistFits_1_dDoublingTimeYears",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:listFits.1.dDoublingTimeYears",
+            "fValue": 0.4204023689540283,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistFits_1_dOnsetYear",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:listFits.1.dOnsetYear",
+            "fValue": 2035.2484758035432,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistFits_1_dPowerAt2025Watts",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:listFits.1.dPowerAt2025Watts",
+            "fValue": 1398826576.3818765,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistFits_1_dTokensAt2025",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:listFits.1.dTokensAt2025",
+            "fValue": 367863413056905.94,
+            "sUnit": "",
+            "fRtol": 1e-06
+        },
+        {
+            "sName": "flistFits_1_dYearsToThreshold",
+            "sDataFile": "aiPowerFits.json",
+            "sAccessPath": "key:listFits.1.dYearsToThreshold",
+            "fValue": 10.24847580354313,
+            "sUnit": "",
+            "fRtol": 1e-06
+        }
+    ]
+}

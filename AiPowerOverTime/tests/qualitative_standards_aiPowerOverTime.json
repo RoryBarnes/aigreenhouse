@@ -1,0 +1,18 @@
+{
+    "listStandards": [
+        {
+            "sFileName": "aiPowerFits.json",
+            "sFormat": "json",
+            "listExpectedColumns": [],
+            "listExpectedJsonKeys": [
+                "dEnergyPerTokenJoules",
+                "dGoogleFraction",
+                "dReferenceYear",
+                "dThresholdWatts",
+                "daObservedTokensPerMonth",
+                "daObservedYears",
+                "listFits"
+            ]
+        }
+    ]
+}

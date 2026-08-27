@@ -1,0 +1,28 @@
+{
+    "listStandards": [
+        {
+            "sFileName": "yearsToThresholdGrid.npz",
+            "sFormat": "npz",
+            "listExpectedColumns": [
+                "daDoublingTimes",
+                "daEnergiesPerToken",
+                "daaYearsToThreshold",
+                "daContourLevels",
+                "daLabelDoublingTimes",
+                "daLabelEnergies",
+                "dTokensAt2025",
+                "dGoogleFraction",
+                "dThresholdWatts"
+            ],
+            "listExpectedJsonKeys": []
+        },
+        {
+            "sFileName": "contourMarkers.json",
+            "sFormat": "json",
+            "listExpectedColumns": [],
+            "listExpectedJsonKeys": [
+                "listMarkers"
+            ]
+        }
+    ]
+}
