@@ -18,12 +18,12 @@ pip install --require-hashes -r requirements.lock
 # Step: AiPowerOverTime
 ( cd 'AiPowerOverTime' && \
     python dataAiPowerOverTime.py --data-file ../aiWasteHeatData.json --output aiPowerFits.json && \
-    python plotAiPowerOverTime.py --power-fits aiPowerFits.json {sPlotDirectory}/aiPowerOverTime.{sFigureType} 
+    python plotAiPowerOverTime.py --power-fits aiPowerFits.json /work/Plot/aiPowerOverTime.png 
 )
 # Step: YearsToThresholdContour
 ( cd 'YearsToThresholdContour' && \
-    python dataYearsToThresholdContour.py --power-fits {step:aipowerovertime.aiPowerFits} --output-grid yearsToThresholdGrid.npz --output-markers contourMarkers.json && \
-    python plotYearsToThresholdContour.py --years-grid yearsToThresholdGrid.npz --contour-markers contourMarkers.json {sPlotDirectory}/yearsToThresholdContour.{sFigureType} 
+    python dataYearsToThresholdContour.py --power-fits /work/AiPowerOverTime/aiPowerFits.json --output-grid yearsToThresholdGrid.npz --output-markers contourMarkers.json && \
+    python plotYearsToThresholdContour.py --years-grid yearsToThresholdGrid.npz --contour-markers contourMarkers.json /work/Plot/yearsToThresholdContour.png 
 )
 sha256sum -c MANIFEST.sha256
 VAIBIFY_REPRODUCE_EOF
