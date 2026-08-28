@@ -192,5 +192,10 @@
     "sLicense": "CC-BY-4.0",
     "listKeywords": [],
     "sRelatedGithubUrl": ""
+  },
+  "bNoStandaloneBinaries": true,
+  "listDeclaredBinaries": [],
+  "dictDeterminism": {
+    "bAcceptBlasVariance": false
   }
 }
