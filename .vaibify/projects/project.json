@@ -161,7 +161,7 @@
       "bNoInputData": true
     }
   ],
-  "iWorkflowSchemaVersion": 12,
+  "iWorkflowSchemaVersion": 13,
   "sFigureType": "png",
   "iNumberOfCores": 1,
   "dictAiProvenance": {
@@ -196,6 +196,10 @@
   "bNoStandaloneBinaries": true,
   "listDeclaredBinaries": [],
   "dictDeterminism": {
-    "bAcceptBlasVariance": false
+    "bAcceptBlasVariance": false,
+    "sBlasVarianceAnswer": "rejected",
+    "sOmpThreadsAnswer": "pinned",
+    "dOmpNumThreads": 1,
+    "sMklModeAnswer": "not-used"
   }
 }
