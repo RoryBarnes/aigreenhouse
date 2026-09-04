@@ -9,18 +9,18 @@
       "bPlotOnly": false,
       "bInteractive": false,
       "saDataCommands": [
-        "python dataAiPowerOverTime.py --data-file ../aiWasteHeatData.json --output aiPowerFits.json"
+        "python3 dataAiPowerOverTime.py --data-file ../aiWasteHeatData.json --output aiPowerFits.json"
       ],
       "saOutputDataFiles": [
         "aiPowerFits.json"
       ],
       "saTestCommands": [
-        "pytest tests/test_qualitative_aiPowerOverTime.py",
-        "pytest tests/test_quantitative_aiPowerOverTime.py",
-        "pytest tests/test_integrity_aiPowerOverTime.py"
+        "python3 -m pytest tests/test_qualitative_aiPowerOverTime.py",
+        "python3 -m pytest tests/test_quantitative_aiPowerOverTime.py",
+        "python3 -m pytest tests/test_integrity_aiPowerOverTime.py"
       ],
       "saPlotCommands": [
-        "python plotAiPowerOverTime.py --power-fits aiPowerFits.json {sPlotDirectory}/aiPowerOverTime.{sFigureType}"
+        "python3 plotAiPowerOverTime.py --power-fits aiPowerFits.json {sPlotDirectory}/aiPowerOverTime.{sFigureType}"
       ],
       "saPlotFiles": [
         "{sPlotDirectory}/aiPowerOverTime.{sFigureType}"
@@ -71,19 +71,19 @@
       "bPlotOnly": false,
       "bInteractive": false,
       "saDataCommands": [
-        "python dataYearsToThresholdContour.py --power-fits {step:aipowerovertime.aiPowerFits} --output-grid yearsToThresholdGrid.npz --output-markers contourMarkers.json"
+        "python3 dataYearsToThresholdContour.py --power-fits {step:aipowerovertime.aiPowerFits} --output-grid yearsToThresholdGrid.npz --output-markers contourMarkers.json"
       ],
       "saOutputDataFiles": [
         "yearsToThresholdGrid.npz",
         "contourMarkers.json"
       ],
       "saTestCommands": [
-        "pytest tests/test_qualitative_yearsToThresholdContour.py",
-        "pytest tests/test_quantitative_yearsToThresholdContour.py",
-        "pytest tests/test_integrity_yearsToThresholdContour.py"
+        "python3 -m pytest tests/test_qualitative_yearsToThresholdContour.py",
+        "python3 -m pytest tests/test_quantitative_yearsToThresholdContour.py",
+        "python3 -m pytest tests/test_integrity_yearsToThresholdContour.py"
       ],
       "saPlotCommands": [
-        "python plotYearsToThresholdContour.py --years-grid yearsToThresholdGrid.npz --contour-markers contourMarkers.json {sPlotDirectory}/yearsToThresholdContour.{sFigureType}"
+        "python3 plotYearsToThresholdContour.py --years-grid yearsToThresholdGrid.npz --contour-markers contourMarkers.json {sPlotDirectory}/yearsToThresholdContour.{sFigureType}"
       ],
       "saPlotFiles": [
         "{sPlotDirectory}/yearsToThresholdContour.{sFigureType}"
