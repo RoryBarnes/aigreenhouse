@@ -1,6 +1,14 @@
-# vaibify-conftest-version: 5
+# vaibify-conftest-version: 7
 from pathlib import Path
-_PROJECT_REPO = Path('/workspace/aigreenhouse')
+_STAMPED_PROJECT_REPO = Path('/workspace/aigreenhouse')
+def _fpathLocateProjectRepo():
+    sSelf = globals().get('__file__') or ''
+    if sSelf:
+        for pathAncestor in Path(sSelf).resolve().parents:
+            if (pathAncestor / '.vaibify').is_dir():
+                return pathAncestor
+    return _STAMPED_PROJECT_REPO
+_PROJECT_REPO = _fpathLocateProjectRepo()
 _MARKER_BASE = _PROJECT_REPO / '.vaibify' / 'test_markers'
 _PROJECTS_DIR = _PROJECT_REPO / '.vaibify' / 'projects'
 _WORKFLOWS_DIR = _PROJECT_REPO / '.vaibify' / 'workflows'
@@ -283,8 +291,8 @@ def _fsActiveWorkflowSlug():
     return "default"
 
 
-def pytest_sessionfinish(session, exitstatus):
-    """Write a JSON marker after every pytest run."""
+def _fnWriteSessionMarker(session, exitstatus):
+    """Compose this session's marker and write it under _MARKER_BASE."""
     sStepDir = str(Path(__file__).resolve().parent.parent)
     sStepDirRel = _fsStepDirRepoRel(sStepDir)
     fNow = time.time()
@@ -307,6 +315,31 @@ def pytest_sessionfinish(session, exitstatus):
     (sMarkerDir / sFilename).write_text(
         json.dumps(dictMarker, indent=2)
     )
+
+
+def pytest_sessionfinish(session, exitstatus):
+    """Write a JSON marker after every pytest run, or say why not.
+
+    Writing the marker can NEVER fail the session. The marker is
+    vaibify's bookkeeping, not a scientific result, and an
+    unwritable marker directory once turned a fully passing suite
+    into ``exit 1`` -- which reads on screen as the researcher's
+    own tests failing, because pytest had already printed
+    "1 passed" above it. The cause is printed instead, so a step
+    whose test status goes unknown says why.
+    """
+    try:
+        _fnWriteSessionMarker(session, exitstatus)
+    except Exception as error:
+        print(
+            "vaibify: could not write the test-result marker under "
+            + str(_MARKER_BASE) + ": " + repr(error)
+        )
+        print(
+            "vaibify: the test results above stand; this step's "
+            "test status will show as unknown until the marker "
+            "directory is writable."
+        )
 
 
 import pytest
