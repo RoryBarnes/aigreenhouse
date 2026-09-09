@@ -1,6 +1,18 @@
 {
   "dictContainer": {
     "bLocalImageOnly": false,
+    "dictImageArchive": {
+      "iTarballBytes": 951010566,
+      "sArchitecture": "amd64",
+      "sConceptDoi": "10.5072/zenodo.599632",
+      "sDepositedIso": "2026-09-09T17:35:30.702849+00:00",
+      "sImageDigest": "ai-greenhouse@sha256:5480accbd67c1be651cba5d31efe1bc37c658129be6021014aa51e9cb194ce7b",
+      "sImageStreamSha256": "sha256:c8846fe03501a6e8fefd90af56aec6c90301899296f4c84bc865659953bcdcbe",
+      "sProvenance": "original",
+      "sTarballName": "environment-image.tar.zst",
+      "sTarballSha256": "sha256:7cfc972017822de6275fe4810e6fa04962ebb09f1d28b2b49d10c609c5f072be",
+      "sVersionDoi": "10.5072/zenodo.599633"
+    },
     "sArchitecture": "amd64",
     "sContainerName": "1f9b8611ac7b4c0ae74c601595fd68532d34ceed30b53d9f11533b7fee1cd9ad",
     "sImageDigest": "ai-greenhouse@sha256:5480accbd67c1be651cba5d31efe1bc37c658129be6021014aa51e9cb194ce7b"
@@ -13,5 +25,5 @@
   },
   "iSourceDateEpoch": 1788968920,
   "sSchemaVersion": "1",
-  "sTimestamp": "2026-09-09T16:07:10.727089+00:00"
+  "sTimestamp": "2026-09-09T17:35:31.013339+00:00"
 }
