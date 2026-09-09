@@ -1,0 +1,38 @@
+{
+  "dictAiProvenance": {
+    "bNetworkIsolatedAtCapture": false,
+    "dictAgentCliVersions": {
+      "claude": "2.1.258 (Claude Code)",
+      "codex": "codex-cli 0.152.1"
+    },
+    "listDeclaredModels": [
+      {
+        "sModelId": "claude-opus-5[1m]",
+        "sUseEndDate": "2026-08-21",
+        "sUseStartDate": "2026-08-21",
+        "sVendor": "Anthropic"
+      }
+    ],
+    "listSupervisionIntervals": [],
+    "listUnattributedFlags": [],
+    "sCapturedAtUtc": "2026-09-02T01:32:07.262205+00:00",
+    "sHubInvokerModelId": "claude-sonnet-5",
+    "sProjectContextSha256": "87c2a275f264427723a9fc285d58b0aa580dbb4d530a56db099923734841130b",
+    "sTrustBaseStatement": "This record is complete assuming the host kernel, the Docker daemon, and the vaibify hub were unmodified, and no host-root actor bypassed them.",
+    "sWorkspacePromptSha256": "f303cc264935252d2c3214b0669aa29569940b1bb6c1b8d0ec99dde90f88632b"
+  },
+  "dictRerunFailure": {},
+  "fDurationSeconds": 17.13780028000474,
+  "iOutputHashesMatched": 23,
+  "iOutputHashesTotal": 23,
+  "iSchemaVersion": 4,
+  "listCarriedPaths": [
+    "AI_USAGE.md"
+  ],
+  "listDivergedHashes": [],
+  "sAttestedAtUtc": "2026-09-02T01:32:07Z",
+  "sImageDigest": "ai-greenhouse@sha256:5480accbd67c1be651cba5d31efe1bc37c658129be6021014aa51e9cb194ce7b",
+  "sManifestDigestAtAttestation": "sha256:80729cc4ed68a22f56411ef135a7da7d2157d6adcaa90921bdc89de8b6c390aa",
+  "sRunLogPath": "",
+  "sStatus": "passed"
+}
