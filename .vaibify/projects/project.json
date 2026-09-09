@@ -201,9 +201,5 @@
     "sOmpThreadsAnswer": "pinned",
     "dOmpNumThreads": 1,
     "sMklModeAnswer": "not-used"
-  },
-  "dictImageArchive": {
-    "sAnswer": "declined",
-    "sAnsweredIso": "2026-09-08T22:40:45.735273+00:00"
   }
 }
