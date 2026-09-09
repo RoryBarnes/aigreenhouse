@@ -21,9 +21,9 @@ astropy==8.0.1 \
     #   vplanet
     #   vplot
     #   vspace
-astropy-iers-data==0.2026.8.31.0.57.9 \
-    --hash=sha256:4c67cfaec2235b761c11763479984ad4ab25b899b4f9dd66df90225d11a81bf6 \
-    --hash=sha256:c6ac376d845846653b372a68ee5f24de234b92db9179bb82263b85efe4fe558a
+astropy-iers-data==0.2026.9.7.0.56.14 \
+    --hash=sha256:b24396f527feb4ec4b4ef0dcba820246ac7ecb1eed91ebb9e767d64774349659 \
+    --hash=sha256:eb7f05464ab43603ff3cddbfbf2fe3c6abc925fe5dd0f268d95d7f8872cf4fe7
     # via astropy
 bigplanet==3.1.2 \
     --hash=sha256:2356ed805b1635eb2513a33410508c6181a63f31e46aec630e7f960db8ef9c4d \
@@ -848,9 +848,9 @@ setuptools==84.0.0 \
     --hash=sha256:51a52592b3b99e102b609654876bd65f19f999935166d1352678931132b0c670 \
     --hash=sha256:f4695c21257f0d9b537ec2692c941d02ee143b7cc1276941349a546573b2ef73
     # via setuptools-scm
-setuptools-scm==10.2.2 \
-    --hash=sha256:36b5dcef6bbeee0bc76b7756d1b574b3762e2138611a4f18e898f22f1aaee462 \
-    --hash=sha256:509585ce0628ede1c64ab1e40e7464481fb880c80a388effce9067bf6b2142fe
+setuptools-scm==10.2.3 \
+    --hash=sha256:7fcf8ff55c95eb8b572a23c81495e5559b9b90f3e82fcf0952bb76c37de27a81 \
+    --hash=sha256:f179ed3e2a63cf5823e5ee9aa9ca08386219400443a0553224d72dde3f206b44
     # via vplot
 six==1.17.0 \
     --hash=sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274 \
@@ -860,9 +860,9 @@ tqdm==4.70.0 \
     --hash=sha256:55b0b0dbd97462d06ebee91e4dac24ed4d4702be82b24f07e6c1d27e08cea220 \
     --hash=sha256:7f585706bfddbdebf89daac705b2dfcc16890130727d3197ca62c732b4310953
     # via vplanet
-vcs-versioning==2.3.2 \
-    --hash=sha256:24abddff97aecf44cf3fec727eae8d76d9c6f70f5acb39afc41f824d69f2aac5 \
-    --hash=sha256:df6cdf10eab8fc0cc41c8ab9d1f1ebdacab8489a4c46fbeb1e6e06823b74d31f
+vcs-versioning==2.3.4 \
+    --hash=sha256:076afa0e12a42a23faba92bcb62cb016c1ce38051ceee1f302de1e2676a68bbc \
+    --hash=sha256:f3443da15a34a32755b04324e33c6166add300c7661f45902225190c9337f711
     # via setuptools-scm
 vplanet==2.5.36 \
     --hash=sha256:1b2a1238175c7c6f7fb99dea2cd6c01f96804bc25e95470db53e36821fc5c04b
