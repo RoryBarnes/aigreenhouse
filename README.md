@@ -1,0 +1,1 @@
+This repository contains the canonical data and results for computing the time to a moist greenhouse based on global consumption of tokens. This example is a toy model that assumes token use doubles while the energy/token leaked to the environment remains constant. This research is primarily inteded for researchers seeking to test out vaibify.
