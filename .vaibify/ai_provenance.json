@@ -14,7 +14,7 @@
   ],
   "listSupervisionIntervals": [],
   "listUnattributedFlags": [],
-  "sCapturedAtUtc": "2026-09-15T23:59:04.683447+00:00",
+  "sCapturedAtUtc": "2026-09-16T03:49:40.374172+00:00",
   "sHubInvokerModelId": "claude-sonnet-5",
   "sProjectContextSha256": "87c2a275f264427723a9fc285d58b0aa580dbb4d530a56db099923734841130b",
   "sTrustBaseStatement": "This record is complete assuming the host kernel, the Docker daemon, and the vaibify hub were unmodified, and no host-root actor bypassed them.",
