@@ -130,7 +130,7 @@
     },
     {
       "sName": "AI Declaration",
-      "sDirectory": "aiDeclaration",
+      "sDirectory": "AIDeclaration",
       "sStepKind": "ai-declaration",
       "sDeclarationFile": "AI_USAGE.md",
       "bRunEnabled": true,
