@@ -15,7 +15,7 @@
     ],
     "listSupervisionIntervals": [],
     "listUnattributedFlags": [],
-    "sCapturedAtUtc": "2026-09-16T02:45:45.129594+00:00",
+    "sCapturedAtUtc": "2026-09-16T07:17:48.350002+00:00",
     "sHubInvokerModelId": "claude-sonnet-5",
     "sProjectContextSha256": "87c2a275f264427723a9fc285d58b0aa580dbb4d530a56db099923734841130b",
     "sTrustBaseStatement": "This record is complete assuming the host kernel, the Docker daemon, and the vaibify hub were unmodified, and no host-root actor bypassed them.",
@@ -27,31 +27,28 @@
   },
   "dictReproductionProvenance": {
     "bEmulated": false,
-    "iSourceDateEpoch": 1789448844,
+    "iSourceDateEpoch": 1789526863,
     "sImageDigestPinned": "ai-greenhouse@sha256:5480accbd67c1be651cba5d31efe1bc37c658129be6021014aa51e9cb194ce7b",
     "sImageReference": "ai-greenhouse@sha256:5480accbd67c1be651cba5d31efe1bc37c658129be6021014aa51e9cb194ce7b",
     "sObtainedFrom": "local",
     "sPlatform": "linux/amd64",
-    "sRerunStartedIso": "2026-09-16T02:45:23.334363+00:00"
+    "sRerunStartedIso": "2026-09-16T07:17:32.262402+00:00"
   },
   "dictRerunFailure": {},
-  "fDurationSeconds": 25.689944315701723,
-  "iOutputHashesMatched": 24,
+  "fDurationSeconds": 20.824489729478955,
+  "iOutputHashesMatched": 26,
   "iOutputHashesTotal": 26,
   "iSchemaVersion": 5,
   "listCarriedPaths": [
     "AI_USAGE.md"
   ],
-  "listDivergedHashes": [
-    ".vaibify/environment.json",
-    "requirements.lock"
-  ],
+  "listDivergedHashes": [],
   "listFileOutcomes": [
     {
-      "sExpected": "ff85b66466fed1d5bce45c987390a9719c826ebd94ecbf77e2b879074b248474",
-      "sObserved": "cf4269e48bb4bd2d6e4f7e0e9f41dcc859e4d7a409973b89a0f8035dce4197b6",
+      "sExpected": "40b7699f55f00df5d5ddd0c2a3457a42472bd6bbb2b394459d09e7b15e44516d",
+      "sObserved": "40b7699f55f00df5d5ddd0c2a3457a42472bd6bbb2b394459d09e7b15e44516d",
       "sPath": ".vaibify/environment.json",
-      "sStatus": "diverged"
+      "sStatus": "matched"
     },
     {
       "sExpected": "774add5a10a2b52f20ddac9c84e60799c7727913084567897953a368fdae80d5",
@@ -204,16 +201,16 @@
       "sStatus": "matched"
     },
     {
-      "sExpected": "bf89730f52b35f6e867d3556d30b175bc306b3e463b500e1f25dca9bcf2307ab",
+      "sExpected": "f427fda615e1887b29bc08444c09fb132751bccf741e1bc66439f66fd49b9b57",
       "sObserved": "f427fda615e1887b29bc08444c09fb132751bccf741e1bc66439f66fd49b9b57",
       "sPath": "requirements.lock",
-      "sStatus": "diverged"
+      "sStatus": "matched"
     }
   ],
-  "sAttestedAtUtc": "2026-09-16T02:47:41Z",
+  "sAttestedAtUtc": "2026-09-16T07:18:44Z",
   "sImageDigest": "ai-greenhouse@sha256:5480accbd67c1be651cba5d31efe1bc37c658129be6021014aa51e9cb194ce7b",
-  "sManifestDigestAtAttestation": "sha256:8d9c619883f95298e53e4618e7915bd6a04ce095f85c1063c630fad89de02cdd",
+  "sManifestDigestAtAttestation": "sha256:d7332c3fa562e9aefe8f3fce1f326afa836f8292cad9ce8696fbac1b743a0728",
   "sReproducedManifestPath": "REPRODUCED.sha256",
   "sRunLogPath": "",
-  "sStatus": "failed"
+  "sStatus": "passed"
 }
