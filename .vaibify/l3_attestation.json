@@ -15,41 +15,38 @@
     ],
     "listSupervisionIntervals": [],
     "listUnattributedFlags": [],
-    "sCapturedAtUtc": "2026-09-28T21:37:44.553460+00:00",
+    "sCapturedAtUtc": "2026-09-29T19:52:11.600602+00:00",
     "sHubInvokerModelId": "claude-sonnet-5",
     "sProjectContextSha256": "87c2a275f264427723a9fc285d58b0aa580dbb4d530a56db099923734841130b",
     "sTrustBaseStatement": "This record is complete assuming the host kernel, the Docker daemon, and the vaibify hub were unmodified, and no host-root actor bypassed them.",
     "sWorkspacePromptSha256": "084e8764c31a3fbc8563b85967fa147c0bb96baf20400b834ce525fe6c5dee86"
   },
   "dictImageArchiveCheck": {
-    "sReason": "No environment archive is recorded.",
-    "sVerdict": "unavailable"
+    "sReason": "A fresh save of the local image hashes to the bytes deposited under 10.5281/zenodo.23045539.",
+    "sVerdict": "matched"
   },
   "dictReproductionProvenance": {
     "bEmulated": false,
-    "iSourceDateEpoch": 1789544227,
+    "iSourceDateEpoch": 1790631466,
     "sImageDigestPinned": "ai-greenhouse@sha256:8f546abcce15ad8f8f24a99af8c86341e9629192409d569b7c68a07d466fea6c",
     "sImageReference": "ai-greenhouse@sha256:8f546abcce15ad8f8f24a99af8c86341e9629192409d569b7c68a07d466fea6c",
     "sObtainedFrom": "local",
     "sPlatform": "linux/amd64",
-    "sRerunStartedIso": "2026-09-28T21:37:28.394760+00:00"
+    "sRerunStartedIso": "2026-09-29T19:51:52.315179+00:00"
   },
   "dictRerunFailure": {},
-  "fDurationSeconds": 20.663181172683835,
-  "iOutputHashesMatched": 24,
+  "fDurationSeconds": 23.741176841780543,
+  "iOutputHashesMatched": 26,
   "iOutputHashesTotal": 26,
   "iSchemaVersion": 5,
   "listCarriedPaths": [
     "AI_USAGE.md"
   ],
-  "listDivergedHashes": [
-    "Plot/aiPowerOverTime.png",
-    "Plot/yearsToThresholdContour.png"
-  ],
+  "listDivergedHashes": [],
   "listFileOutcomes": [
     {
-      "sExpected": "750e779fa51b30f121f389d2073dcf54a2d781d702ee4cb3959c71c9f14b373d",
-      "sObserved": "750e779fa51b30f121f389d2073dcf54a2d781d702ee4cb3959c71c9f14b373d",
+      "sExpected": "b3816bb9878391b8e2d7bebd2379b91c7d06f15052d0ebf801bd1f71843b3568",
+      "sObserved": "b3816bb9878391b8e2d7bebd2379b91c7d06f15052d0ebf801bd1f71843b3568",
       "sPath": ".vaibify/environment.json",
       "sStatus": "matched"
     },
@@ -120,16 +117,16 @@
       "sStatus": "matched"
     },
     {
-      "sExpected": "826b21a91cb3dea215e5f660eaf3d3ee0089cd87dd4af2a3a44d322d42948d95",
+      "sExpected": "06f8bdf408d7e575a0daa4785130ce0b47fbd9db3f0698359f40a1978a135a6d",
       "sObserved": "06f8bdf408d7e575a0daa4785130ce0b47fbd9db3f0698359f40a1978a135a6d",
       "sPath": "Plot/aiPowerOverTime.png",
-      "sStatus": "diverged"
+      "sStatus": "matched"
     },
     {
-      "sExpected": "d310a3639843044a90dcd59895a0c0d840f863af173957d4be192e069ea33431",
+      "sExpected": "cba1237166dec2e496d0bfdc8db4133c64f36091c15d38e1b67437a746a369c3",
       "sObserved": "cba1237166dec2e496d0bfdc8db4133c64f36091c15d38e1b67437a746a369c3",
       "sPath": "Plot/yearsToThresholdContour.png",
-      "sStatus": "diverged"
+      "sStatus": "matched"
     },
     {
       "sExpected": "a64796dae542e614400006f9983001a117fa68bb6fd30dbfbe22f8c83a7df09e",
@@ -210,10 +207,10 @@
       "sStatus": "matched"
     }
   ],
-  "sAttestedAtUtc": "2026-09-28T21:37:45Z",
+  "sAttestedAtUtc": "2026-09-29T19:52:44Z",
   "sImageDigest": "ai-greenhouse@sha256:8f546abcce15ad8f8f24a99af8c86341e9629192409d569b7c68a07d466fea6c",
-  "sManifestDigestAtAttestation": "sha256:b5aa8e95e9e448682fc5ca60bf7706d52d188355e5d9cd0a28ae6dcb06ac8895",
+  "sManifestDigestAtAttestation": "sha256:5a634a13e078f6acbc4ea59f7b1e4d7a6d0e4319f0c9f2d5302db92f71a97c80",
   "sReproducedManifestPath": "REPRODUCED.sha256",
   "sRunLogPath": "",
-  "sStatus": "failed"
+  "sStatus": "passed"
 }
