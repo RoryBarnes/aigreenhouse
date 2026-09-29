@@ -38,7 +38,8 @@
           "sStandardsContent": "{\n    \"listStandards\": [\n        {\n            \"sFileName\": \"aiPowerFits.json\",\n            \"sFormat\": \"json\",\n            \"tExpectedShape\": null,\n            \"sDtype\": \"\",\n            \"bCheckNaN\": false,\n            \"bCheckInf\": false,\n            \"iExpectedByteSize\": 1096\n        }\n    ]\n}",
           "saCommands": [
             "python3 -m pytest tests/test_integrity_aiPowerOverTime.py"
-          ]
+          ],
+          "sLastOutput": "$ python3 -m pytest tests/test_integrity_aiPowerOverTime.py\n============================= test session starts ==============================\nplatform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0\nrootdir: /workspace/aigreenhouse/AiPowerOverTime\ncollected 1 item\n\ntests/test_integrity_aiPowerOverTime.py .                                [100%]\n\n============================== 1 passed in 0.28s ==============================="
         },
         "dictQuantitative": {
           "sFilePath": "AiPowerOverTime/tests/test_quantitative_aiPowerOverTime.py",
@@ -48,7 +49,8 @@
           "sStochasticityClassification": "deterministic",
           "saCommands": [
             "python3 -m pytest tests/test_quantitative_aiPowerOverTime.py"
-          ]
+          ],
+          "sLastOutput": "$ python3 -m pytest tests/test_quantitative_aiPowerOverTime.py\n============================= test session starts ==============================\nplatform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0\nrootdir: /workspace/aigreenhouse/AiPowerOverTime\ncollected 18 items\n\ntests/test_quantitative_aiPowerOverTime.py ..................            [100%]\n\n============================== 18 passed in 0.26s =============================="
         },
         "dictQualitative": {
           "sFilePath": "AiPowerOverTime/tests/test_qualitative_aiPowerOverTime.py",
@@ -57,7 +59,8 @@
           "sStandardsContent": "{\n    \"listStandards\": [\n        {\n            \"sFileName\": \"aiPowerFits.json\",\n            \"sFormat\": \"json\",\n            \"listExpectedColumns\": [],\n            \"listExpectedJsonKeys\": [\n                \"dEnergyPerTokenJoules\",\n                \"dGoogleFraction\",\n                \"dReferenceYear\",\n                \"dThresholdWatts\",\n                \"daObservedTokensPerMonth\",\n                \"daObservedYears\",\n                \"listFits\"\n            ]\n        }\n    ]\n}",
           "saCommands": [
             "python3 -m pytest tests/test_qualitative_aiPowerOverTime.py"
-          ]
+          ],
+          "sLastOutput": "$ python3 -m pytest tests/test_qualitative_aiPowerOverTime.py\n============================= test session starts ==============================\nplatform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0\nrootdir: /workspace/aigreenhouse/AiPowerOverTime\ncollected 1 item\n\ntests/test_qualitative_aiPowerOverTime.py .                              [100%]\n\n============================== 1 passed in 0.01s ==============================="
         },
         "listUserTests": []
       },
@@ -100,7 +103,7 @@
           "saCommands": [
             "python3 -m pytest tests/test_integrity_yearsToThresholdContour.py"
           ],
-          "sLastOutput": "============================= test session starts ==============================\nplatform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0\nrootdir: /workspace/aigreenhouse/YearsToThresholdContour\ncollected 2 items\n\ntests/test_integrity_yearsToThresholdContour.py ..                       [100%]\n\n============================== 2 passed in 0.54s ===============================\n"
+          "sLastOutput": "$ python3 -m pytest tests/test_integrity_yearsToThresholdContour.py\n============================= test session starts ==============================\nplatform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0\nrootdir: /workspace/aigreenhouse/YearsToThresholdContour\ncollected 2 items\n\ntests/test_integrity_yearsToThresholdContour.py ..                       [100%]\n\n============================== 2 passed in 0.55s ==============================="
         },
         "dictQuantitative": {
           "sFilePath": "YearsToThresholdContour/tests/test_quantitative_yearsToThresholdContour.py",
@@ -111,7 +114,7 @@
           "saCommands": [
             "python3 -m pytest tests/test_quantitative_yearsToThresholdContour.py"
           ],
-          "sLastOutput": "============================= test session starts ==============================\nplatform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0\nrootdir: /workspace/aigreenhouse/YearsToThresholdContour\ncollected 15 items\n\ntests/test_quantitative_yearsToThresholdContour.py ...............       [100%]\n\n============================== 15 passed in 1.37s ==============================\n"
+          "sLastOutput": "$ python3 -m pytest tests/test_quantitative_yearsToThresholdContour.py\n============================= test session starts ==============================\nplatform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0\nrootdir: /workspace/aigreenhouse/YearsToThresholdContour\ncollected 15 items\n\ntests/test_quantitative_yearsToThresholdContour.py ...............       [100%]\n\n============================== 15 passed in 0.27s =============================="
         },
         "dictQualitative": {
           "sFilePath": "YearsToThresholdContour/tests/test_qualitative_yearsToThresholdContour.py",
@@ -121,7 +124,7 @@
           "saCommands": [
             "python3 -m pytest tests/test_qualitative_yearsToThresholdContour.py"
           ],
-          "sLastOutput": "============================= test session starts ==============================\nplatform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0\nrootdir: /workspace/aigreenhouse/YearsToThresholdContour\ncollected 2 items\n\ntests/test_qualitative_yearsToThresholdContour.py ..                     [100%]\n\n============================== 2 passed in 0.28s ===============================\n"
+          "sLastOutput": "$ python3 -m pytest tests/test_qualitative_yearsToThresholdContour.py\n============================= test session starts ==============================\nplatform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0\nrootdir: /workspace/aigreenhouse/YearsToThresholdContour\ncollected 2 items\n\ntests/test_qualitative_yearsToThresholdContour.py ..                     [100%]\n\n============================== 2 passed in 0.22s ==============================="
         },
         "listUserTests": []
       },
