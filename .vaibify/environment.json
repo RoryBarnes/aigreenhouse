@@ -1,6 +1,20 @@
 {
   "dictContainer": {
     "bLocalImageOnly": false,
+    "dictImageArchive": {
+      "iTarballBytes": 733039533,
+      "sArchitecture": "amd64",
+      "sConceptDoi": "10.5281/zenodo.22758869",
+      "sDepositedIso": "2026-09-29T19:31:02.241427+00:00",
+      "sImageDigest": "ai-greenhouse@sha256:8f546abcce15ad8f8f24a99af8c86341e9629192409d569b7c68a07d466fea6c",
+      "sImageStreamSha256": "sha256:a6d4a31c1b7059b83020511fdcb89038340f8febd971e7a0a3f73b6877b0118e",
+      "sProvenance": "original",
+      "sTarballMd5": "526a6543eb523a47e75b451e6a85d97d",
+      "sTarballName": "environment-image.tar.zst",
+      "sTarballSha256": "sha256:c1757debb525845a07156215e2dd3278ba3af623896b8c241e2330f1f7ab49e6",
+      "sVersionDoi": "10.5281/zenodo.23045539",
+      "sZenodoService": "zenodo"
+    },
     "dictImageArchiveLineage": {
       "sConceptDoi": "10.5281/zenodo.22758869",
       "sVersionDoi": "10.5281/zenodo.22758870",
@@ -22,5 +36,5 @@
   },
   "iSourceDateEpoch": 1790631466,
   "sSchemaVersion": "1",
-  "sTimestamp": "2026-09-29T14:58:30.212826+00:00"
+  "sTimestamp": "2026-09-29T19:31:02.520870+00:00"
 }
