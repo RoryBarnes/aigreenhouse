@@ -17,6 +17,7 @@ systemPackages:
 pythonPackages:
 - matplotlib
 - numpy
+- pytest
 - vplot
 pipInstallFlags: --prefer-binary
 condaPackages: []
