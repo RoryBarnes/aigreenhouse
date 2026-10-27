@@ -1,3 +1,10 @@
 # Auto-managed by vaibify. Do not edit by hand.
 state.json
 manuscript/
+syncStatus.json
+l3_attestations/
+pipeline_state.json
+pipeline_state.json.*.tmp
+logs/
+test_markers/*/*.lock
+test_markers/*/*.tmp
