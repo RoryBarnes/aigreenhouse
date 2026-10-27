@@ -1,20 +1,167 @@
 {
   "sDirectory": "AiPowerOverTime",
   "sLabel": "A01",
-  "iExitStatus": 0,
-  "fTimestamp": 1790693889.4245234,
-  "sRunAtUtc": "2026-09-29T14:58:09Z",
-  "iCollected": 18,
-  "dictCategories": {
-    "quantitative": {
-      "iPassed": 18,
-      "iFailed": 0
+  "dictRuns": {
+    "580132b5491e4e4782b4326f1d89a110": {
+      "fTimestamp": 1793133260.6666121,
+      "sRunAtUtc": "2026-10-27T20:34:20Z",
+      "iExitStatus": 0,
+      "dictOutputHashes": {
+        "AiPowerOverTime/aiPowerFits.json": "0ccbe544898d69d840346d6297257bf4b531bd8a",
+        "Plot/aiPowerOverTime.png": "7c88fc2483c2d98f8dfd26862e1be8bc8432b105"
+      },
+      "dictInputHashes": {
+        "aiWasteHeatData.json": "244a6e391e8612b3a96361925d4c282f6208bbb7"
+      }
+    },
+    "4408be33923740029e478274fce84cc5": {
+      "fTimestamp": 1793133260.9923155,
+      "sRunAtUtc": "2026-10-27T20:34:20Z",
+      "iExitStatus": 0,
+      "dictOutputHashes": {
+        "AiPowerOverTime/aiPowerFits.json": "0ccbe544898d69d840346d6297257bf4b531bd8a",
+        "Plot/aiPowerOverTime.png": "7c88fc2483c2d98f8dfd26862e1be8bc8432b105"
+      },
+      "dictInputHashes": {
+        "aiWasteHeatData.json": "244a6e391e8612b3a96361925d4c282f6208bbb7"
+      }
+    },
+    "014d5d5a28304bb09518553efbdfeedd": {
+      "fTimestamp": 1793133261.3605182,
+      "sRunAtUtc": "2026-10-27T20:34:21Z",
+      "iExitStatus": 0,
+      "dictOutputHashes": {
+        "AiPowerOverTime/aiPowerFits.json": "0ccbe544898d69d840346d6297257bf4b531bd8a",
+        "Plot/aiPowerOverTime.png": "7c88fc2483c2d98f8dfd26862e1be8bc8432b105"
+      },
+      "dictInputHashes": {
+        "aiWasteHeatData.json": "244a6e391e8612b3a96361925d4c282f6208bbb7"
+      }
     }
   },
-  "dictOutputHashes": {
-    "AiPowerOverTime/aiPowerFits.json": "0ccbe544898d69d840346d6297257bf4b531bd8a"
+  "dictTestFiles": {
+    "test_integrity_aiPowerOverTime.py": {
+      "listNodeIds": [
+        "tests/test_integrity_aiPowerOverTime.py::test_integrity_check[aiPowerFits.json]"
+      ],
+      "dictOutcomes": {
+        "tests/test_integrity_aiPowerOverTime.py::test_integrity_check[aiPowerFits.json]": {
+          "sOutcome": "passed",
+          "sRunId": "580132b5491e4e4782b4326f1d89a110"
+        }
+      },
+      "dictCollectionError": null
+    },
+    "test_qualitative_aiPowerOverTime.py": {
+      "listNodeIds": [
+        "tests/test_qualitative_aiPowerOverTime.py::test_qualitative_check[aiPowerFits.json]"
+      ],
+      "dictOutcomes": {
+        "tests/test_qualitative_aiPowerOverTime.py::test_qualitative_check[aiPowerFits.json]": {
+          "sOutcome": "passed",
+          "sRunId": "4408be33923740029e478274fce84cc5"
+        }
+      },
+      "dictCollectionError": null
+    },
+    "test_quantitative_aiPowerOverTime.py": {
+      "listNodeIds": [
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[fdEnergyPerTokenJoules]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[fdGoogleFraction]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[fdReferenceYear]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[fdThresholdWatts]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[fdaObservedTokensPerMonthMean]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[fdaObservedYearsMean]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_0_bContourReference]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_0_dDoublingTimeYears]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_0_dOnsetYear]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_0_dPowerAt2025Watts]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_0_dTokensAt2025]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_0_dYearsToThreshold]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_1_bContourReference]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_1_dDoublingTimeYears]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_1_dOnsetYear]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_1_dPowerAt2025Watts]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_1_dTokensAt2025]",
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_1_dYearsToThreshold]"
+      ],
+      "dictOutcomes": {
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[fdEnergyPerTokenJoules]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[fdGoogleFraction]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[fdReferenceYear]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[fdThresholdWatts]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[fdaObservedTokensPerMonthMean]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[fdaObservedYearsMean]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_0_bContourReference]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_0_dDoublingTimeYears]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_0_dOnsetYear]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_0_dPowerAt2025Watts]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_0_dTokensAt2025]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_0_dYearsToThreshold]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_1_bContourReference]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_1_dDoublingTimeYears]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_1_dOnsetYear]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_1_dPowerAt2025Watts]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_1_dTokensAt2025]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        },
+        "tests/test_quantitative_aiPowerOverTime.py::test_quantitative_benchmark[flistFits_1_dYearsToThreshold]": {
+          "sOutcome": "passed",
+          "sRunId": "014d5d5a28304bb09518553efbdfeedd"
+        }
+      },
+      "dictCollectionError": null
+    }
   },
-  "dictInputHashes": {
-    "aiWasteHeatData.json": "244a6e391e8612b3a96361925d4c282f6208bbb7"
-  }
+  "dictLegacyCategories": {},
+  "dictUnattributedFailure": null
 }

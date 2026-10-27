@@ -1,23 +1,9 @@
 {
   "dictContainer": {
     "bLocalImageOnly": false,
-    "dictImageArchive": {
-      "iTarballBytes": 733039533,
-      "sArchitecture": "amd64",
-      "sConceptDoi": "10.5281/zenodo.22758869",
-      "sDepositedIso": "2026-09-29T19:31:02.241427+00:00",
-      "sImageDigest": "ai-greenhouse@sha256:8f546abcce15ad8f8f24a99af8c86341e9629192409d569b7c68a07d466fea6c",
-      "sImageStreamSha256": "sha256:a6d4a31c1b7059b83020511fdcb89038340f8febd971e7a0a3f73b6877b0118e",
-      "sProvenance": "original",
-      "sTarballMd5": "526a6543eb523a47e75b451e6a85d97d",
-      "sTarballName": "environment-image.tar.zst",
-      "sTarballSha256": "sha256:c1757debb525845a07156215e2dd3278ba3af623896b8c241e2330f1f7ab49e6",
-      "sVersionDoi": "10.5281/zenodo.23045539",
-      "sZenodoService": "zenodo"
-    },
     "dictImageArchiveLineage": {
       "sConceptDoi": "10.5281/zenodo.22758869",
-      "sVersionDoi": "10.5281/zenodo.22758870",
+      "sVersionDoi": "10.5281/zenodo.23045539",
       "sZenodoService": "zenodo"
     },
     "listAgentOverlays": [
@@ -25,8 +11,149 @@
       "codex"
     ],
     "sArchitecture": "amd64",
-    "sContainerName": "e41f78246fc94880685e8785ca58c7c32fc9eb75e7b5aac000fd51544a9665f4",
-    "sImageDigest": "ai-greenhouse@sha256:8f546abcce15ad8f8f24a99af8c86341e9629192409d569b7c68a07d466fea6c"
+    "sContainerName": "2b89246345cf508bf6ca5cc9cebce2d0c39418c7c0d2bd95e743e58242168580",
+    "sImageDigest": "ai-greenhouse@sha256:7c9db31f512acfd65a16b38afa41371c4110d0449aa4e0eb941c9586719e24e3"
+  },
+  "dictExecutionProfile": {
+    "dictRequested": {
+      "NPY_DISABLE_CPU_FEATURES": "AVX512_ICL,X86_V4",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_CORETYPE": "Haswell",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "listFloorKeys": [
+      "OPENBLAS_CORETYPE",
+      "NPY_DISABLE_CPU_FEATURES"
+    ],
+    "sProfileId": "across-v1",
+    "sRequiredLevel": "x86-64-v3"
+  },
+  "dictOutputProvenance": {
+    "dictOutputs": {
+      "AiPowerOverTime/aiPowerFits.json": {
+        "sRunContextId": "ec4b7dcca041576f",
+        "sSection": "data",
+        "sState": "recorded"
+      },
+      "Plot/aiPowerOverTime.png": {
+        "sRunContextId": "ec4b7dcca041576f",
+        "sSection": "plot",
+        "sState": "recorded"
+      },
+      "Plot/yearsToThresholdContour.png": {
+        "sRunContextId": "ec4b7dcca041576f",
+        "sSection": "plot",
+        "sState": "recorded"
+      },
+      "YearsToThresholdContour/contourMarkers.json": {
+        "sRunContextId": "ec4b7dcca041576f",
+        "sSection": "data",
+        "sState": "recorded"
+      },
+      "YearsToThresholdContour/yearsToThresholdGrid.npz": {
+        "sRunContextId": "ec4b7dcca041576f",
+        "sSection": "data",
+        "sState": "recorded"
+      }
+    },
+    "dictRunContexts": {
+      "ec4b7dcca041576f": {
+        "dictApplied": {
+          "NPY_DISABLE_CPU_FEATURES": "AVX512_ICL,X86_V4",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_CORETYPE": "Haswell",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "dictProbe": {
+          "dictMatrixProduct": {
+            "iExitCode": 0,
+            "sReason": "",
+            "sState": "completed"
+          },
+          "dictNumpyCpuFeatures": {
+            "listActive": [
+              "AVX",
+              "AVX2",
+              "BMI",
+              "BMI2",
+              "CX16",
+              "F16C",
+              "FMA3",
+              "LAHF",
+              "LZCNT",
+              "MMX",
+              "MOVBE",
+              "POPCNT",
+              "SSE",
+              "SSE2",
+              "SSE3",
+              "SSE41",
+              "SSE42",
+              "SSSE3",
+              "X86_V2",
+              "X86_V3"
+            ],
+            "listBaseline": [
+              "X86_V2"
+            ],
+            "listDispatch": [
+              "X86_V3",
+              "X86_V4",
+              "AVX512_ICL",
+              "AVX512_SPR"
+            ]
+          },
+          "dictNumpyDisabledFeatures": {
+            "AVX512_ICL": {
+              "sReason": "",
+              "sStatus": "applied"
+            },
+            "X86_V4": {
+              "sReason": "",
+              "sStatus": "applied"
+            }
+          },
+          "dictOpenblas": {
+            "iThreads": 1,
+            "sCoreName": "Haswell",
+            "sLibrary": "libscipy_openblas64_-f48b354e.so",
+            "sState": "detected"
+          },
+          "dictSettingsSeen": {
+            "NPY_DISABLE_CPU_FEATURES": "AVX512_ICL,X86_V4",
+            "OMP_NUM_THREADS": "1",
+            "OPENBLAS_CORETYPE": "Haswell",
+            "OPENBLAS_NUM_THREADS": "1"
+          },
+          "sNumpyState": "installed",
+          "sNumpyVersion": "2.5.4",
+          "sProbeState": "ran"
+        },
+        "dictRequested": {
+          "NPY_DISABLE_CPU_FEATURES": "AVX512_ICL,X86_V4",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_CORETYPE": "Haswell",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "dictSettings": {
+          "dictCapabilities": {
+            "bReadable": true,
+            "iVisibleCores": 11,
+            "listSettingsPresent": [],
+            "sArchitecture": "x86_64",
+            "sLevel": "x86-64-v3",
+            "sVendor": "GenuineIntel"
+          },
+          "dictDecision": {
+            "listDroppedKeys": [],
+            "sFloorState": "applied",
+            "sReason": ""
+          }
+        },
+        "sProfileId": "across-v1",
+        "sRecordedUtc": "2026-10-27T20:34:14Z"
+      }
+    }
   },
   "dictSystemTools": {
     "sGcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
@@ -34,7 +161,7 @@
     "sOsRelease": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
     "sPython": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
   },
-  "iSourceDateEpoch": 1790631466,
+  "iSourceDateEpoch": 1791828261,
   "sSchemaVersion": "1",
-  "sTimestamp": "2026-09-29T19:31:02.520870+00:00"
+  "sTimestamp": "2026-10-27T20:35:10.859268+00:00"
 }

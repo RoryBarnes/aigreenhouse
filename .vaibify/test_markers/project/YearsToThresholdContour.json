@@ -1,19 +1,159 @@
 {
   "sDirectory": "YearsToThresholdContour",
   "sLabel": "A02",
-  "iExitStatus": 0,
-  "fTimestamp": 1790693892.303232,
-  "sRunAtUtc": "2026-09-29T14:58:12Z",
-  "iCollected": 15,
-  "dictCategories": {
-    "quantitative": {
-      "iPassed": 15,
-      "iFailed": 0
+  "dictRuns": {
+    "3a9559ee438540d6bc0e181988d8fab4": {
+      "fTimestamp": 1793133265.0820458,
+      "sRunAtUtc": "2026-10-27T20:34:25Z",
+      "iExitStatus": 0,
+      "dictOutputHashes": {
+        "YearsToThresholdContour/yearsToThresholdGrid.npz": "3363ce377e241f0f5cbaf8e28f8c75a2b73e33fd",
+        "YearsToThresholdContour/contourMarkers.json": "631229e490e6378f7afac5bbd634926ff53176d3",
+        "Plot/yearsToThresholdContour.png": "260b387d0a0128bcc815931f53ee237f37e80869"
+      },
+      "dictInputHashes": {}
+    },
+    "8fadbb6b05de46529a3cbae8deffc269": {
+      "fTimestamp": 1793133265.4777458,
+      "sRunAtUtc": "2026-10-27T20:34:25Z",
+      "iExitStatus": 0,
+      "dictOutputHashes": {
+        "YearsToThresholdContour/yearsToThresholdGrid.npz": "3363ce377e241f0f5cbaf8e28f8c75a2b73e33fd",
+        "YearsToThresholdContour/contourMarkers.json": "631229e490e6378f7afac5bbd634926ff53176d3",
+        "Plot/yearsToThresholdContour.png": "260b387d0a0128bcc815931f53ee237f37e80869"
+      },
+      "dictInputHashes": {}
+    },
+    "ac548751a7dc4e4189e2fe82b2de3e5d": {
+      "fTimestamp": 1793133265.8541596,
+      "sRunAtUtc": "2026-10-27T20:34:25Z",
+      "iExitStatus": 0,
+      "dictOutputHashes": {
+        "YearsToThresholdContour/yearsToThresholdGrid.npz": "3363ce377e241f0f5cbaf8e28f8c75a2b73e33fd",
+        "YearsToThresholdContour/contourMarkers.json": "631229e490e6378f7afac5bbd634926ff53176d3",
+        "Plot/yearsToThresholdContour.png": "260b387d0a0128bcc815931f53ee237f37e80869"
+      },
+      "dictInputHashes": {}
     }
   },
-  "dictOutputHashes": {
-    "YearsToThresholdContour/yearsToThresholdGrid.npz": "3363ce377e241f0f5cbaf8e28f8c75a2b73e33fd",
-    "YearsToThresholdContour/contourMarkers.json": "631229e490e6378f7afac5bbd634926ff53176d3"
+  "dictTestFiles": {
+    "test_integrity_yearsToThresholdContour.py": {
+      "listNodeIds": [
+        "tests/test_integrity_yearsToThresholdContour.py::test_integrity_check[yearsToThresholdGrid.npz]",
+        "tests/test_integrity_yearsToThresholdContour.py::test_integrity_check[contourMarkers.json]"
+      ],
+      "dictOutcomes": {
+        "tests/test_integrity_yearsToThresholdContour.py::test_integrity_check[yearsToThresholdGrid.npz]": {
+          "sOutcome": "passed",
+          "sRunId": "3a9559ee438540d6bc0e181988d8fab4"
+        },
+        "tests/test_integrity_yearsToThresholdContour.py::test_integrity_check[contourMarkers.json]": {
+          "sOutcome": "passed",
+          "sRunId": "3a9559ee438540d6bc0e181988d8fab4"
+        }
+      },
+      "dictCollectionError": null
+    },
+    "test_qualitative_yearsToThresholdContour.py": {
+      "listNodeIds": [
+        "tests/test_qualitative_yearsToThresholdContour.py::test_qualitative_check[yearsToThresholdGrid.npz]",
+        "tests/test_qualitative_yearsToThresholdContour.py::test_qualitative_check[contourMarkers.json]"
+      ],
+      "dictOutcomes": {
+        "tests/test_qualitative_yearsToThresholdContour.py::test_qualitative_check[yearsToThresholdGrid.npz]": {
+          "sOutcome": "passed",
+          "sRunId": "8fadbb6b05de46529a3cbae8deffc269"
+        },
+        "tests/test_qualitative_yearsToThresholdContour.py::test_qualitative_check[contourMarkers.json]": {
+          "sOutcome": "passed",
+          "sRunId": "8fadbb6b05de46529a3cbae8deffc269"
+        }
+      },
+      "dictCollectionError": null
+    },
+    "test_quantitative_yearsToThresholdContour.py": {
+      "listNodeIds": [
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdaDoublingTimesMean]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdaEnergiesPerTokenMean]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdaaYearsToThresholdMean]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdaContourLevelsMean]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdaLabelDoublingTimesMean]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdaLabelEnergiesMean]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdTokensAt2025Mean]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdGoogleFractionMean]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdThresholdWattsMean]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[flistMarkers_0_bContourReference]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[flistMarkers_0_dDoublingTimeYears]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[flistMarkers_0_dEnergyPerTokenJoules]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[flistMarkers_1_bContourReference]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[flistMarkers_1_dDoublingTimeYears]",
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[flistMarkers_1_dEnergyPerTokenJoules]"
+      ],
+      "dictOutcomes": {
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdaDoublingTimesMean]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdaEnergiesPerTokenMean]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdaaYearsToThresholdMean]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdaContourLevelsMean]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdaLabelDoublingTimesMean]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdaLabelEnergiesMean]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdTokensAt2025Mean]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdGoogleFractionMean]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[fdThresholdWattsMean]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[flistMarkers_0_bContourReference]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[flistMarkers_0_dDoublingTimeYears]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[flistMarkers_0_dEnergyPerTokenJoules]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[flistMarkers_1_bContourReference]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[flistMarkers_1_dDoublingTimeYears]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        },
+        "tests/test_quantitative_yearsToThresholdContour.py::test_quantitative_benchmark[flistMarkers_1_dEnergyPerTokenJoules]": {
+          "sOutcome": "passed",
+          "sRunId": "ac548751a7dc4e4189e2fe82b2de3e5d"
+        }
+      },
+      "dictCollectionError": null
+    }
   },
-  "dictInputHashes": {}
+  "dictLegacyCategories": {},
+  "dictUnattributedFailure": null
 }
