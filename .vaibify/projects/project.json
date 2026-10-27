@@ -181,7 +181,7 @@
       "sDeclaredIso": "2026-08-25T00:57:23.594179+00:00"
     }
   },
-  "sZenodoService": "sandbox",
+  "sZenodoService": "zenodo",
   "dictZenodoMetadata": {
     "sTitle": "AI Greenhouse",
     "sDescription": "Calculations for how long until token processing triggers a moist greenhouse",
